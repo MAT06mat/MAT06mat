@@ -11,7 +11,4 @@ My name is Matthieu<br>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=MAT06mat&theme=default&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=MAT06mat&theme=default&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
----
-[![](https://visitcount.itsvg.in/api?id=MAT06mat&icon=1&color=2)](https://visitcount.itsvg.in)
-
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

@@ -26,7 +26,7 @@ div.cover {
     position: relative;
 }
 
-img.cover-profile {
+img.cover-profil {
     height: 100px;
     position: relative;
     left: 50%;
@@ -253,7 +253,7 @@ div.center {
 
 @media only screen and (max-width: 767px) {
 
-    img.cover-profile {
+    img.cover-profil {
         height: 90px;
         margin-left: -50px;
         margin-top: 75px;

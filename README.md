@@ -2,7 +2,7 @@
 My name is Matthieu<br>
 
 # 💫 About Me:
-💻 I'm interested in programming, video games and brainteasers.<br>📕 I’m currently studying.<br>✉️ You can reach me by mat06mat22@gmail.com.<br>⏩ Or on my website.
+💻 I'm interested in programming, video games and brainteasers.<br>📕 I’m currently studying.<br>✉️ You can reach me by mat06mat22@gmail.com.<br>⏩ Or on my <a href="https://mat06mat.github.io/MAT06mat">website</a>.
 
 
 # 💻 Tech Stack:

@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import { Helmet } from "react-helmet-async";
 
 function PortfolioCriptApp() {
     return (
         <>
+            <Helmet>
+                <title>CriptApp</title>
+            </Helmet>
             <div className="portfolio-header">
                 <div
                     className="cover-bar"

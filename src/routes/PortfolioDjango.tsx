@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import { Helmet } from "react-helmet-async";
 
 function PortfolioDjango() {
     return (
         <>
+            <Helmet>
+                <title>Exemple Django</title>
+            </Helmet>
             <div className="portfolio-header">
                 <div className="cover-bar">
                     <h1>MAT06mat</h1>

@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import { Helmet } from "react-helmet-async";
 
 function PortfolioCubis() {
     return (
         <>
+            <Helmet>
+                <title>Cubis</title>
+            </Helmet>
             <div className="portfolio-header">
                 <div
                     className="cover-bar"

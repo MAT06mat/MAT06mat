@@ -1,8 +1,12 @@
-import "../assets/css/privacy-policy.css";
+import { Helmet } from "react-helmet-async";
 
 function PrivacyPolicyCubis() {
     return (
         <>
+            <Helmet>
+                <title>Cubis Privacy Policy</title>
+                <link rel="stylesheet" href="/css/privacy-policy.css" />
+            </Helmet>
             <strong>Privacy Policy</strong>
             <p>
                 MAT06mat built the Cubis app as a Free app. This SERVICE is

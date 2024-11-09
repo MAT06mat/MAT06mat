@@ -1,12 +1,14 @@
+import "../assets/css/Contact.scss";
+
 function Contact() {
     return (
-        <div className="section">
-            <div
-                className="separateur display-mobile"
-                style={{ marginBottom: "20px" }}
-            ></div>
-            <div className="frame">
-                <p className="frame-title">Parlons de votre projet</p>
+        <section>
+            <div className="container contact">
+                <div
+                    className="separateur display-mobile"
+                    style={{ marginBottom: "20px" }}
+                />
+                <p className="title">Parlons de votre projet</p>
                 <table style={{ width: "100%" }}>
                     <tr>
                         <td valign="top" align="center">
@@ -30,7 +32,7 @@ function Contact() {
                     </tr>
                 </table>
             </div>
-        </div>
+        </section>
     );
 }
 

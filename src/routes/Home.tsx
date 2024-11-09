@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Contact from "../components/Contact";
 import Section from "../components/Section";
 import Card from "../components/Card";
+import ContactButton from "../components/ContactButton";
 
 function Home() {
     return (
@@ -13,15 +14,7 @@ function Home() {
                 <img className="profil" src="/MAT06mat/images/profil.png" />
                 <h1>MAT06mat</h1>
                 <p>Développeur en apprentissage</p>
-
-                <div style={{ textAlign: "center" }}>
-                    <a
-                        className="contact-button"
-                        href="mailto:mat06mat22@gmail.com"
-                    >
-                        ME CONTACTER
-                    </a>
-                </div>
+                <ContactButton center />
                 <div className="bar">
                     <a href="mailto:mat06mat22@gmail.com">
                         mat06mat22@gmail.com

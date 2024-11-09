@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import Contact from "../components/Contact";
 import { Link } from "react-router-dom";
 
 function Home() {
     return (
         <>
+            <Helmet>
+                <title>Profile</title>
+            </Helmet>
             <div className="cover">
                 <img
                     className="cover-profil"

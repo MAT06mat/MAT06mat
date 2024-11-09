@@ -40,31 +40,33 @@ function PortfolioCubis() {
             <div className="section">
                 <div className="texte-avec-ligne-verticale">
                     <p>
-                        Voici une application bureau que j'ai créé de zero.
+                        Voici une application mobile que j'ai créé de zero.
                         <br />
-                        Cette application s'appelle "CriptApp", elle permet de
-                        coder et décoder du texte à partir d'une clé donné par
-                        l'utilisateur.
+                        Cubis est une application mobile qui entre dans la
+                        catégorie des jeux de réflexion.
                         <br />
-                        Voici un{" "}
-                        <a href="https://github.com/MAT06mat/CriptApp">
-                            lien
-                        </a>{" "}
-                        pour la télécharger.
+                        Le but est de remplir une grille avec des pièces de
+                        formes variées.
                         <br />
-                        <u>Technologies utilisées :</u> <b>Python et Tkinter</b>
+                        Cubis est disponible sur le playstore :{" "}
+                        <a href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1">
+                            Découvrir !
+                        </a>
+                        <br />
+                        <u>Technologies utilisées :</u>{" "}
+                        <b>Python, Kivy et Buildozer</b>
                     </p>
                 </div>
                 <div className="center">
                     <img
-                        src="/MAT06mat/images/project2.jpg"
+                        src="/MAT06mat/images/project3.jpg"
                         className="portfolio"
                     />
                     <a
                         style={{ display: "block" }}
-                        href="https://github.com/MAT06mat/CriptApp"
+                        href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1"
                     >
-                        Télécharger sur windows
+                        Télécharger pour android
                     </a>
                 </div>
             </div>

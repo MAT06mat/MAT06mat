@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --color1: #D89584;
+  --color2: #F4F4F4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  line-height: 1.5;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  height: 350px;
+}
+
+div.cover {
+  background: url(../images/cover_overlay.png) no-repeat center/100% 100%, url(../images/cover.jpg) no-repeat center/cover;
+  height: 360px;
+  position: relative;
+}
+
+img.cover-profil {
+  height: 100px;
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: 50px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+div.cover p {
+  color: lightgray;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+div.cover-bar {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  border-left: 4px solid var(--color1);
+  padding-left: 8px;
+}
+
+div.cover-bar p {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.cover-bar p:first-child {
+  margin-bottom: 14px;
+}
+
+div.cover-bar * {
+  color: white;
+  font-size: 14px;
+}
+
+a.contact-button {
+  color: var(--color1);
+  border: 3px solid var(--color1);
+  padding: 8px 20px;
+  text-decoration: none;
+  background-color: #00000040;
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+a.contact-button:hover {
+  color: white;
+  border: 3px solid white;
+}
+
+.section {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: auto;
+}
+
+div.section-grise1 {
+  background: url(../images/triangle2white.svg) no-repeat center bottom -1px/100%;
+  background-color: var(--color2);
+  padding-bottom: 70px;
+}
+
+div.section-grise2 {
+  background: url(../images/triangle1white.svg) no-repeat center top/100%;
+  background-color: var(--color2);
+  padding-top: 80px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 34px;
+  margin-top: 0px;
+}
+
+div.separateur {
+  background-color: #979797;
+  height: 1px;
+  width: 150px;
+  position: relative;
+  left: 50%;
+  margin-left: -75px;
+}
+
+div.section-grise1 p {
+  font-size: 22px;
+  color: #656565;
+  text-align: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.col-contenu {
+  width: 40%;
+}
+
+div.col-contenu {
+  width: 60%;
+  padding-left: 16px;
+}
+
+.float-right {
+  float: right;
+}
+
+div.texte-avec-ligne-verticale {
+  border-left: 4px solid var(--color1);
+  padding-left: 8px;
+  height: 50px;
+  display: inline-block;
+}
+
+div.texte-avec-ligne-verticale p {
+  margin-top: 0;
+}
+
+div.barre-verticale {
+  height: 50px;
+  width: 4px;
+  background-color: var(--color1);
+  margin-right: 8px;
+}
+
+.col-portfolio {
+  width: 47%;
+
+}
+
+div.frame {
+  margin: 30px 50px;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+p.frame-title {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.frame img {
+  width: 100px;
+}
+
+/* Portfolio */
+
+div.portfolio-header {
+  height: 90px;
+  background: url(../images/cover.jpg) no-repeat center/cover;
+}
+
+a.portfolio-header {
+  margin-top: 28px;
+  margin-right: 28px;
+  font-size: 10px;
+  padding: 8px 12px 5px 11px;
+}
+
+div.portfolio-header h1 {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 0px;
+}
+
+div.cover-bar {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+h1.portfolio {
+  font-size: 46px;
+  color: black;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+h2.portfolio {
+  color: #656565;
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+a.portfolio-back {
+  margin-left: -15px;
+  color: var(--color1);
+}
+
+img.portfolio {
+  margin-top: 40px;
+  width: 70%;
+  max-width: 475px;
+}
+
+div.center {
+  text-align: center;
+}
+
+.display-mobile {
+  display: none;
+}
+
+#img-portfolio {
+  width: 100%;
+}
+
+/* RESPONSIVE DESIGN : PARTIE MOBILE */
+
+@media only screen and (max-width: 767px) {
+
+  img.cover-profil {
+    height: 90px;
+    margin-left: -50px;
+    margin-top: 75px;
+  }
+
+  h1 {
+    font-size: 35px;
+    margin-top: 6px;
+  }
+
+  div.cover p {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+
+  .section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  div.section-grise1 {
+    padding-bottom: 40px;
+  }
+
+  div.section-grise2 {
+    padding-top: 40px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  img.col-contenu {
+    width: 100%;
+  }
+
+  div.col-contenu {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+
+  .col-portfolio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  div.frame {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+  }
+
+  div.frame img {
+    width: 70px;
+  }
+
+  /* PORTFOLIO MOBILE */
+
+  div.cover-bar h1 {
+    font-size: 20px;
+  }
+
+  div.cover-bar {
+    padding-top: 5px;
+    padding-left: 16px;
+  }
+
+  div.portfolio-header a.contact-button {
+    font-size: 12px;
+    padding: 7px 15px;
+    margin-top: 28px;
+    margin-right: 16px;
+  }
+
+  h1.portfolio {
+    font-size: 35px;
+  }
+
+  h2.portfolio {
+    font-size: 20px;
+  }
+
+  img.portfolio {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .display-mobile {
+    display: block;
+  }
+}
+
+
+/* RESPONSIVE DESIGN : PARTIE LARGE */
+
+@media only screen and (min-width: 1200px) {
+
+  div.section-grise1 {
+    background: url(../images/triangle2white.svg) no-repeat center bottom -1px/100%;
+    background-size: cover;
+    height: 310px;
+    background-color: var(--color2);
+    padding-bottom: 70px;
+
+  }
+
+  div.section-grise2 {
+    background: url(../images/triangle1white.svg) no-repeat center top -220px/100%;
+    background-color: var(--color2);
+    padding-top: 200px;
+    background-size: cover;
+    height: 770px;
+  }
+
+  div.tableau-portfolio {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.frame {
+    max-width: 1019px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.en-savoir-plus {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

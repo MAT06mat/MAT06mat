@@ -7,6 +7,7 @@ import PortfolioDjango from "./routes/PortfolioDjango";
 import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 v7_relativeSplatPath: true,
             }}
         >
+            <ScrollToTop />
             <Routes>
                 <Route path="/">
                     <Route element={<Home />} index />

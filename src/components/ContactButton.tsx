@@ -1,13 +1,8 @@
 import "../assets/css/ContactButton.scss";
 
-interface Props {
-    center?: boolean;
-}
-
-function ContactButton({ center }: Props) {
-    const pos = center ? "center" : "";
+function ContactButton() {
     return (
-        <div className={"contact-button " + pos}>
+        <div className="contact-button">
             <a href="mailto:mat06mat22@gmail.com">ME CONTACTER</a>
         </div>
     );

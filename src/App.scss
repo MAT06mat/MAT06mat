@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -11,19 +13,26 @@ body {
   margin: 0;
   font-family: Arial;
   line-height: 1.5;
+
+  a {
+    color: var(--color1)
+  }
 }
 
 header {
   background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
   height: 360px;
-  position: relative;
+  padding: 1em;
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   img.profil {
     height: 100px;
-    position: relative;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: 50px;
   }
 
   p {
@@ -33,14 +42,15 @@ header {
     font-size: 14px;
   }
 
-  div.bar {
-    position: absolute;
-    top: 20px;
-    left: 10px;
+  .contact-button {
+    margin-top: 1em;
+  }
+
+  .bar {
     border-left: 4px solid var(--color1);
     padding: 8px 16px;
 
-    * {
+    &>* {
       text-align: left;
       color: white;
       font-size: 14px;
@@ -108,67 +118,6 @@ div.line {
   p {
     margin-top: 0;
   }
-}
-
-/* Portfolio */
-
-div.portfolio-header {
-  height: 90px;
-  background: url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
-}
-
-a.portfolio-header {
-  margin-top: 28px;
-  margin-right: 28px;
-  font-size: 10px;
-  padding: 8px 12px 5px 11px;
-}
-
-div.portfolio-header h1 {
-  display: inline-block;
-  font-size: 24px;
-  margin-top: 0px;
-}
-
-div.cover-bar {
-  padding: 4px 12px 8px 12px;
-}
-
-h1.portfolio {
-  font-size: 46px;
-  color: black;
-  line-height: 1;
-  padding-top: 10px;
-}
-
-h2.portfolio {
-  color: #656565;
-  font-size: 26px;
-  font-weight: normal;
-  margin-bottom: 0px;
-}
-
-a.portfolio-back {
-  margin-left: -15px;
-  color: var(--color1);
-}
-
-img.portfolio {
-  margin-top: 40px;
-  width: 70%;
-  max-width: 475px;
-}
-
-div.center {
-  text-align: center;
-}
-
-.display-mobile {
-  display: none;
-}
-
-#img-portfolio {
-  width: 100%;
 }
 
 /* RESPONSIVE DESIGN : PARTIE MOBILE */

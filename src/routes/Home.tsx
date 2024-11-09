@@ -11,14 +11,16 @@ function Home() {
                 <title>Profile</title>
             </Helmet>
             <header>
-                <img className="profil" src="/MAT06mat/images/profil.png" />
-                <h1>MAT06mat</h1>
-                <p>Développeur en apprentissage</p>
-                <ContactButton center />
                 <div className="bar">
                     <a href="mailto:mat06mat22@gmail.com">
                         mat06mat22@gmail.com
                     </a>
+                </div>
+                <div className="flex">
+                    <img className="profil" src="/MAT06mat/images/profil.png" />
+                    <h1>MAT06mat</h1>
+                    <p>Développeur en apprentissage</p>
+                    <ContactButton />
                 </div>
             </header>
             <Section gray end>
@@ -53,20 +55,16 @@ function Home() {
             <Section gray start>
                 <h2>Portfolio</h2>
                 <div className="cols">
-                    <Card
-                        image="project3small.jpg"
-                        link="cubis"
-                        text="Application mobile Cubis"
-                    />
+                    <Card image="project3small.jpg" link="cubis" text="Cubis" />
                     <Card
                         image="project2small.jpg"
-                        link="criptapp"
-                        text="Application bureau CripApp"
+                        link="cript-app"
+                        text="CriptApp"
                     />
                     <Card
                         image="project1small.jpg"
-                        link="exemple-django"
-                        text="Site web pour un restaurant"
+                        link="pizza-mama"
+                        text="Pizza Mama"
                     />
                 </div>
             </Section>

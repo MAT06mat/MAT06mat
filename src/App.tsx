@@ -23,11 +23,8 @@ function App() {
                 <Route path="/">
                     <Route element={<Home />} index />
                     <Route path="cubis" element={<PortfolioCubis />} />
-                    <Route path="criptapp" element={<PortfolioCriptApp />} />
-                    <Route
-                        path="exemple-django"
-                        element={<PortfolioDjango />}
-                    />
+                    <Route path="cript-app" element={<PortfolioCriptApp />} />
+                    <Route path="pizza-mama" element={<PortfolioDjango />} />
                     <Route
                         path="ultraordinaire"
                         element={<PortfolioUltraordinaire />}

@@ -1,0 +1,56 @@
+.portfolio {
+    header {
+        height: 90px;
+        background: url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em 1em 1em;
+
+        .bar h1 {
+            padding: 0;
+            color: white;
+        }
+
+        .contact-button {
+            margin-top: 0;
+        }
+    }
+
+    header h1 {
+        display: inline-block;
+        font-size: 24px;
+        margin-top: 0px;
+    }
+
+    h1 {
+        font-size: 46px;
+        color: black;
+        line-height: 1;
+        padding-top: 10px;
+    }
+
+    h2 {
+        color: #656565;
+        font-size: 26px;
+        font-weight: normal;
+        margin-bottom: 0px;
+    }
+
+    a.back {
+        font-size: 1.2em;
+        color: var(--color1);
+    }
+
+    div.center {
+        text-align: center;
+    }
+
+    .display-mobile {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+}

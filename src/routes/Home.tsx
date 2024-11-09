@@ -42,12 +42,12 @@ function Home() {
                             âge, je suis maintenant un développeur expérimenté.
                             <br />
                             <br />
-                            J'ai suivi la formation "Développeur Python" de
-                            Jonathan Roux sur Udemy (www.codeavecjonathan.com),
-                            ce qui m'a permis d'obtenir un niveau en
-                            programmation python suffisament solide pour
-                            réaliser les projets "CripApp", "PizzaMama" et
-                            "Cubis" un de mes plus gros projet.
+                            J'ai suivi une formation python qui m'a permis
+                            d'obtenir un niveau en programmation python
+                            suffisament solide pour réaliser les projets
+                            "CripApp", "PizzaMama" et "Cubis" un de mes plus
+                            gros projet. De plus j'ai appris react.js ce qui me
+                            permet de créer des applications web.
                         </p>
                         <a href="https://github.com/MAT06mat" target="_blank">
                             En savoir plus sur mon profil

@@ -10,7 +10,13 @@ import ErrorPage from "./routes/ErrorPage";
 
 function App() {
     return (
-        <Router basename="/MAT06mat">
+        <Router
+            basename="/MAT06mat"
+            future={{
+                v7_startTransition: true,
+                v7_relativeSplatPath: true,
+            }}
+        >
             <Routes>
                 <Route path="/">
                     <Route element={<Home />} index />

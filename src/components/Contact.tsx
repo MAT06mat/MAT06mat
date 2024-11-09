@@ -10,7 +10,7 @@ function Contact() {
                 <table style={{ width: "100%" }}>
                     <tr>
                         <td valign="top" align="center">
-                            <img src="images/profil.png" />
+                            <img src="/MAT06mat/images/profil.png" />
                         </td>
                         <td>
                             <div

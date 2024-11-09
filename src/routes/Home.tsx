@@ -5,7 +5,10 @@ function Home() {
     return (
         <>
             <div className="cover">
-                <img className="cover-profil" src="images/profil.png" />
+                <img
+                    className="cover-profil"
+                    src="/MAT06mat/images/profil.png"
+                />
                 <h1>MAT06mat</h1>
                 <p>Développeur en apprentissage</p>
 
@@ -34,7 +37,10 @@ function Home() {
 
             <div className="section en-savoir-plus">
                 <h2>En savoir plus</h2>
-                <img src="images/profil2.png" className="col-contenu" />
+                <img
+                    src="/MAT06mat/images/profil2.png"
+                    className="col-contenu"
+                />
                 <div className="col-contenu float-right">
                     <div className="texte-avec-ligne-verticale">
                         <p>
@@ -71,7 +77,7 @@ function Home() {
                                 <Link to="cubis">
                                     <img
                                         style={{ width: "100%" }}
-                                        src="images/project3small.jpg"
+                                        src="/MAT06mat/images/project3small.jpg"
                                     />
                                 </Link>
                             </td>
@@ -92,7 +98,7 @@ function Home() {
                                 <Link to="criptapp">
                                     <img
                                         style={{ width: "100%" }}
-                                        src="images/project2small.jpg"
+                                        src="/MAT06mat/images/project2small.jpg"
                                     />
                                 </Link>
                             </td>
@@ -118,7 +124,7 @@ function Home() {
                                 <Link to="exemple-django">
                                     <img
                                         style={{ width: "100%" }}
-                                        src="images/project1small.jpg"
+                                        src="/MAT06mat/images/project1small.jpg"
                                     />
                                 </Link>
                             </td>

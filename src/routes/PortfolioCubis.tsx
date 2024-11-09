@@ -56,7 +56,10 @@ function PortfolioCubis() {
                     </p>
                 </div>
                 <div className="center">
-                    <img src="../images/project2.jpg" className="portfolio" />
+                    <img
+                        src="/MAT06mat/images/project2.jpg"
+                        className="portfolio"
+                    />
                     <a
                         style={{ display: "block" }}
                         href="https://github.com/MAT06mat/CriptApp"

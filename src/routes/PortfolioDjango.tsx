@@ -59,7 +59,7 @@ function PortfolioDjango() {
                 <div className="center">
                     <a href="https://mat06mat.pythonanywhere.com/">
                         <img
-                            src="../images/project1.jpg"
+                            src="/MAT06mat/images/project1.jpg"
                             className="portfolio"
                         />
                     </a>

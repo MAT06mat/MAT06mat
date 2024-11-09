@@ -21,7 +21,7 @@ iframe {
 }
 
 div.cover {
-  background: url(images/cover_overlay.png) no-repeat center/100% 100%, url(images/cover.jpg) no-repeat center/cover;
+  background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
   height: 360px;
   position: relative;
 }
@@ -97,13 +97,13 @@ a.contact-button:hover {
 }
 
 div.section-grise1 {
-  background: url(images/triangle2white.svg) no-repeat center bottom -1px/100%;
+  background: url(/MAT06mat/images/triangle2white.svg) no-repeat center bottom -1px/100%;
   background-color: var(--color2);
   padding-bottom: 70px;
 }
 
 div.section-grise2 {
-  background: url(images/triangle1white.svg) no-repeat center top/100%;
+  background: url(/MAT06mat/images/triangle1white.svg) no-repeat center top/100%;
   background-color: var(--color2);
   padding-top: 80px;
 }
@@ -191,7 +191,7 @@ div.frame img {
 
 div.portfolio-header {
   height: 90px;
-  background: url(images/cover.jpg) no-repeat center/cover;
+  background: url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
 }
 
 a.portfolio-header {
@@ -352,7 +352,7 @@ div.center {
 @media only screen and (min-width: 1200px) {
 
   div.section-grise1 {
-    background: url(images/triangle2white.svg) no-repeat center bottom -1px/100%;
+    background: url(/MAT06mat/images/triangle2white.svg) no-repeat center bottom -1px/100%;
     background-size: cover;
     height: 310px;
     background-color: var(--color2);
@@ -361,7 +361,7 @@ div.center {
   }
 
   div.section-grise2 {
-    background: url(images/triangle1white.svg) no-repeat center top -220px/100%;
+    background: url(/MAT06mat/images/triangle1white.svg) no-repeat center top -220px/100%;
     background-color: var(--color2);
     padding-top: 200px;
     background-size: cover;

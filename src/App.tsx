@@ -6,22 +6,29 @@ import PortfolioCriptApp from "./routes/PortfolioCriptApp";
 import PortfolioDjango from "./routes/PortfolioDjango";
 import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
+import ErrorPage from "./routes/ErrorPage";
 
 function App() {
     return (
         <Router>
             <Routes>
-                <Route element={<Home />} index />
-                <Route path="cubis" element={<PortfolioCubis />} />
-                <Route path="criptapp" element={<PortfolioCriptApp />} />
-                <Route path="exemple-django" element={<PortfolioDjango />} />
-                <Route
-                    path="ultraordinaire"
-                    element={<PortfolioUltraordinaire />}
-                />
-                <Route path="privacy-policy">
-                    <Route path="cubis" element={<PrivacyPolicyCubis />} />
+                <Route path="/">
+                    <Route element={<Home />} index />
+                    <Route path="cubis" element={<PortfolioCubis />} />
+                    <Route path="criptapp" element={<PortfolioCriptApp />} />
+                    <Route
+                        path="exemple-django"
+                        element={<PortfolioDjango />}
+                    />
+                    <Route
+                        path="ultraordinaire"
+                        element={<PortfolioUltraordinaire />}
+                    />
+                    <Route path="privacy-policy">
+                        <Route path="cubis" element={<PrivacyPolicyCubis />} />
+                    </Route>
                 </Route>
+                <Route path="*" element={<ErrorPage />} />
             </Routes>
         </Router>
     );

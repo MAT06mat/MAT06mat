@@ -10,7 +10,7 @@ import ErrorPage from "./routes/ErrorPage";
 
 function App() {
     return (
-        <Router>
+        <Router basename="/MAT06mat">
             <Routes>
                 <Route path="/">
                     <Route element={<Home />} index />

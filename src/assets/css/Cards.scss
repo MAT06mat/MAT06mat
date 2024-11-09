@@ -1,0 +1,27 @@
+div.card {
+    a {
+        text-decoration: none;
+        color: #656565;
+    }
+
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        .vertical-separator {
+            height: 50px;
+            width: 4px;
+            background-color: var(--color1);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text {
+        text-align: center;
+    }
+}

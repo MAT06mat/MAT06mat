@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --color1: #D89584;
   --color2: #F4F4F4;
@@ -14,24 +13,39 @@ body {
   line-height: 1.5;
 }
 
-iframe {
-  width: 100%;
-  border: none;
-  height: 350px;
-}
-
-div.cover {
+header {
   background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
   height: 360px;
   position: relative;
-}
 
-img.cover-profil {
-  height: 100px;
-  position: relative;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: 50px;
+  img.profil {
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+
+  p {
+    color: lightgray;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  div.bar {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    border-left: 4px solid var(--color1);
+    padding: 8px 16px;
+
+    * {
+      text-align: left;
+      color: white;
+      font-size: 14px;
+    }
+  }
 }
 
 h1 {
@@ -42,34 +56,10 @@ h1 {
   margin-bottom: 0px;
 }
 
-div.cover p {
-  color: lightgray;
+h2 {
   text-align: center;
-  margin-top: 8px;
-  font-size: 14px;
-}
-
-div.cover-bar {
-  position: absolute;
-  top: 20px;
-  left: 10px;
-  border-left: 4px solid var(--color1);
-  padding-left: 8px;
-}
-
-div.cover-bar p {
-  text-align: left;
+  font-size: 34px;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-div.cover-bar p:first-child {
-  margin-bottom: 14px;
-}
-
-div.cover-bar * {
-  color: white;
-  font-size: 14px;
 }
 
 a.contact-button {
@@ -81,6 +71,7 @@ a.contact-button {
   display: inline-block;
   margin-top: 18px;
   font-size: 14px;
+  transition: all .2s ease-in-out;
 }
 
 a.contact-button:hover {
@@ -88,42 +79,27 @@ a.contact-button:hover {
   border: 3px solid white;
 }
 
-.section {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  overflow: auto;
+img {
+  object-fit: contain;
 }
 
-div.section-grise1 {
-  background: url(/MAT06mat/images/triangle2white.svg) no-repeat center bottom -1px/100%;
-  background-color: var(--color2);
-  padding-bottom: 70px;
-}
+.cols {
+  display: flex;
+  gap: 1em;
 
-div.section-grise2 {
-  background: url(/MAT06mat/images/triangle1white.svg) no-repeat center top/100%;
-  background-color: var(--color2);
-  padding-top: 80px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 34px;
-  margin-top: 0px;
+  &>* {
+    width: 50%;
+  }
 }
 
 div.separateur {
   background-color: #979797;
   height: 1px;
   width: 150px;
-  position: relative;
-  left: 50%;
-  margin-left: -75px;
+  margin: 1em auto 0 auto;
 }
 
-div.section-grise1 p {
+p.gray {
   font-size: 22px;
   color: #656565;
   text-align: center;
@@ -132,41 +108,25 @@ div.section-grise1 p {
   margin-right: auto;
 }
 
-img.col-contenu {
-  width: 40%;
+div.line {
+  padding-left: 1em;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background-color: var(--color1);
+  }
+
+  p {
+    margin-top: 0;
+  }
 }
 
-div.col-contenu {
-  width: 60%;
-  padding-left: 16px;
-}
-
-.float-right {
-  float: right;
-}
-
-div.texte-avec-ligne-verticale {
-  border-left: 4px solid var(--color1);
-  padding-left: 8px;
-  height: 50px;
-  display: inline-block;
-}
-
-div.texte-avec-ligne-verticale p {
-  margin-top: 0;
-}
-
-div.barre-verticale {
-  height: 50px;
-  width: 4px;
-  background-color: var(--color1);
-  margin-right: 8px;
-}
-
-.col-portfolio {
-  width: 47%;
-
-}
 
 div.frame {
   margin: 30px 50px;
@@ -258,6 +218,14 @@ div.center {
     margin-top: 75px;
   }
 
+  .cols {
+    flex-direction: column;
+
+    &>* {
+      width: 100%;
+    }
+  }
+
   h1 {
     font-size: 35px;
     margin-top: 6px;
@@ -286,24 +254,10 @@ div.center {
     font-size: 25px;
   }
 
-  img.col-contenu {
-    width: 100%;
-  }
-
-  div.col-contenu {
-    width: 100%;
-    padding-left: 0px;
-    margin-top: 20px;
-  }
-
-  .col-portfolio {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
   div.frame {
     margin: 0px;
     padding: 0px;
+    padding-bottom: 20px;
     box-shadow: none;
   }
 

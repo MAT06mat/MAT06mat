@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Contact from "../components/Contact";
-import { Link } from "react-router-dom";
+import Section from "../components/Section";
+import Card from "../components/Card";
 
 function Home() {
     return (
@@ -8,143 +9,74 @@ function Home() {
             <Helmet>
                 <title>Profile</title>
             </Helmet>
-            <div className="cover">
-                <img
-                    className="cover-profil"
-                    src="/MAT06mat/images/profil.png"
-                />
+            <header>
+                <img className="profil" src="/MAT06mat/images/profil.png" />
                 <h1>MAT06mat</h1>
                 <p>Développeur en apprentissage</p>
 
                 <div style={{ textAlign: "center" }}>
                     <a
                         className="contact-button"
-                        href="mailto:mat06mat22@gmail.com?subject=Contact%20depuis%20matthieufelten.com"
+                        href="mailto:mat06mat22@gmail.com"
                     >
                         ME CONTACTER
                     </a>
                 </div>
-                <div className="cover-bar">
-                    <a href="mailto:mat06mat22@gmail.com?subject=Contact%20depuis%20matthieufelten.com">
+                <div className="bar">
+                    <a href="mailto:mat06mat22@gmail.com">
                         mat06mat22@gmail.com
                     </a>
                 </div>
-            </div>
-
-            <div className="section section-grise1">
-                <div className="separateur"></div>
-                <p>
+            </header>
+            <Section gray end>
+                <div className="separateur margin"></div>
+                <p className="gray">
                     Je développe <b>votre projet WEB</b> ou vos{" "}
                     <b>Applications mobiles</b> iOS/Android de A à Z
                 </p>
-            </div>
-
-            <div className="section en-savoir-plus">
+            </Section>
+            <Section>
                 <h2>En savoir plus</h2>
-                <img
-                    src="/MAT06mat/images/profil2.png"
-                    className="col-contenu"
-                />
-                <div className="col-contenu float-right">
-                    <div className="texte-avec-ligne-verticale">
+                <div className="cols">
+                    <img src="/MAT06mat/images/profil2.png" />
+                    <div className="line">
                         <p>
                             Passionné par la programmation depuis le plus jeune
                             âge, je suis maintenant un développeur expérimenté.
                             <br />
                             <br />
                             J'ai suivi une formation python qui m'a permis
-                            d'obtenir un niveau en programmation python
-                            suffisament solide pour réaliser les projets
-                            "CripApp", "PizzaMama" et "Cubis" un de mes plus
-                            gros projet. De plus j'ai appris react.js ce qui me
-                            permet de créer des applications web.
+                            d'obtenir un niveau suffisament solide pour réaliser
+                            les projets "CripApp", "PizzaMama" et "Cubis" un de
+                            mes plus gros projet. De plus j'ai appris react ce
+                            qui me permet de créer des applications web.
                         </p>
                         <a href="https://github.com/MAT06mat" target="_blank">
                             En savoir plus sur mon profil
                         </a>
                     </div>
                 </div>
-            </div>
-
-            <div className="section section-grise2">
+            </Section>
+            <Section gray start>
                 <h2>Portfolio</h2>
-                <div className="tableau-portfolio">
-                    <table
-                        className="col-portfolio"
-                        style={{ display: "inline-block" }}
-                    >
-                        <tr>
-                            <td>
-                                <div className="barre-verticale"></div>
-                            </td>
-                            <td style={{ width: "100%" }}>
-                                <Link to="cubis">
-                                    <img
-                                        style={{ width: "100%" }}
-                                        src="/MAT06mat/images/project3small.jpg"
-                                    />
-                                </Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="center">
-                                <Link to="cubis">Application mobile Cubis</Link>
-                            </td>
-                        </tr>
-                    </table>
-                    <table className="col-portfolio float-right">
-                        <tr>
-                            <td>
-                                <div className="barre-verticale"></div>
-                            </td>
-                            <td style={{ width: "100%" }}>
-                                <Link to="criptapp">
-                                    <img
-                                        style={{ width: "100%" }}
-                                        src="/MAT06mat/images/project2small.jpg"
-                                    />
-                                </Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="center">
-                                <Link to="criptapp">
-                                    Application bureau "CripApp"
-                                </Link>
-                            </td>
-                        </tr>
-                    </table>
-                    <table
-                        className="col-portfolio"
-                        style={{ display: "inline-block" }}
-                    >
-                        <tr>
-                            <td>
-                                <div className="barre-verticale"></div>
-                            </td>
-                            <td style={{ width: "100%" }}>
-                                <Link to="exemple-django">
-                                    <img
-                                        style={{ width: "100%" }}
-                                        src="/MAT06mat/images/project1small.jpg"
-                                    />
-                                </Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="center">
-                                <Link to="exemple-django">
-                                    Site web pour un restaurant
-                                </Link>
-                            </td>
-                        </tr>
-                    </table>
+                <div className="cols">
+                    <Card
+                        image="project3small.jpg"
+                        link="cubis"
+                        text="Application mobile Cubis"
+                    />
+                    <Card
+                        image="project2small.jpg"
+                        link="criptapp"
+                        text="Application bureau CripApp"
+                    />
+                    <Card
+                        image="project1small.jpg"
+                        link="exemple-django"
+                        text="Site web pour un restaurant"
+                    />
                 </div>
-            </div>
-
+            </Section>
             <Contact />
         </>
     );

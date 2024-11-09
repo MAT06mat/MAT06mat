@@ -2,15 +2,31 @@ name: "Deploy to GitHub Pages"
 
 on:
     push:
-        branches: ["main"]
-    pull_request:
-        branches: ["main"]
+        branches:
+            - master
+            - main
+
 jobs:
-    build:
+    deploy:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v2
 
-            - name: Build and Deploy React app to GitHub Pages
-              uses: omkartapale/react-deployment-gh-pages@v1.0.0
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "18"
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
+                  publish_branch: gh-pages

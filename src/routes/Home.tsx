@@ -18,11 +18,9 @@ function Home() {
                     </a>
                 </div>
                 <div className="cover-bar">
-                    <p>
-                        <a href="mailto:mat06mat22@gmail.com?subject=Contact%20depuis%20matthieufelten.com">
-                            mat06mat22@gmail.com
-                        </a>
-                    </p>
+                    <a href="mailto:mat06mat22@gmail.com?subject=Contact%20depuis%20matthieufelten.com">
+                        mat06mat22@gmail.com
+                    </a>
                 </div>
             </div>
 

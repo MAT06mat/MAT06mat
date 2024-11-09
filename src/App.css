@@ -208,8 +208,7 @@ div.portfolio-header h1 {
 }
 
 div.cover-bar {
-  margin-top: 6px;
-  margin-left: 6px;
+  padding: 4px 12px 8px 12px;
 }
 
 h1.portfolio {
@@ -319,8 +318,7 @@ div.center {
   }
 
   div.cover-bar {
-    padding-top: 5px;
-    padding-left: 16px;
+    display: none;
   }
 
   div.portfolio-header a.contact-button {

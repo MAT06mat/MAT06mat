@@ -1,7 +1,7 @@
 {
     "name": "mat06mat",
     "private": true,
-    "homepage": "https://mat06mat.github.io/MAT06mat",
+    "homepage": "/MAT06mat",
     "version": "0.0.0",
     "type": "module",
     "scripts": {

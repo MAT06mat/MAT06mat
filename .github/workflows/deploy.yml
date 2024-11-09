@@ -23,6 +23,7 @@ jobs:
 
             - name: Build
               run: npm run build
+
             - name: Deploy
               run: |
                   git config --global user.name $user_name
@@ -34,3 +35,10 @@ jobs:
                   user_email: "github-actions[bot]@users.noreply.github.com"
                   github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
                   repository: ${{ github.repository }}
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist
+                  publish_branch: gh-pages

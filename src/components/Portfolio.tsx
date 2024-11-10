@@ -4,7 +4,6 @@ import ContactButton from "./ContactButton";
 import "../assets/css/Portfolio.scss";
 import Section from "./Section";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
 
 interface Props {
     title: string;
@@ -38,7 +37,6 @@ function Portfolio({ title, children }: Props) {
                 </Section>
                 {children}
             </div>
-            <Contact />
         </>
     );
 }

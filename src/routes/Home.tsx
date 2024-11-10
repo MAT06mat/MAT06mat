@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import Contact from "../components/Contact";
 import Section from "../components/Section";
 import Card from "../components/Card";
 import ContactButton from "../components/ContactButton";
@@ -76,7 +75,6 @@ function Home() {
                     />
                 </div>
             </Section>
-            <Contact />
         </>
     );
 }

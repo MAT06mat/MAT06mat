@@ -30,9 +30,9 @@ function App() {
                         path="ultraordinaire"
                         element={<PortfolioUltraordinaire />}
                     />
-                    <Route path="privacy-policy">
-                        <Route path="cubis" element={<PrivacyPolicyCubis />} />
-                    </Route>
+                </Route>
+                <Route path="privacy-policy">
+                    <Route path="cubis" element={<PrivacyPolicyCubis />} />
                 </Route>
                 <Route path="*" element={<ErrorPage />} />
             </Routes>

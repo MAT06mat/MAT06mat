@@ -1,10 +1,12 @@
 import { Outlet } from "react-router-dom";
 import "../assets/css/PageLayout.scss";
+import Contact from "./Contact";
 
 function PageLayout() {
     return (
         <>
             <Outlet />
+            <Contact />
             <footer>
                 <div className="container">
                     <div className="links">

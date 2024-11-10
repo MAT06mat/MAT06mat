@@ -57,6 +57,14 @@ function Home() {
                 <div className="cols">
                     <Card image="project3small.jpg" link="cubis" text="Cubis" />
                     <Card
+                        image="project4small.jpg"
+                        link="ultraordinaire"
+                        text="Ultraordinaire"
+                    />
+                </div>
+                <div className="gap" />
+                <div className="cols">
+                    <Card
                         image="project2small.jpg"
                         link="cript-app"
                         text="CriptApp"

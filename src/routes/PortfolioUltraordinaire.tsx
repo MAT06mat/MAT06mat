@@ -37,6 +37,7 @@ function PortfolioUltraordinaire() {
                         </p>
                     </div>
                 </div>
+                <div className="padding" />
             </Section>
         </Portfolio>
     );

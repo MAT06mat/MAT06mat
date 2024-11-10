@@ -34,6 +34,7 @@ function PortfolioCriptApp() {
                         </p>
                     </div>
                 </div>
+                <div className="padding" />
             </Section>
         </Portfolio>
     );

@@ -74,6 +74,7 @@ function Home() {
                         text="Pizza Mama"
                     />
                 </div>
+                <div className="padding" />
             </Section>
         </>
     );

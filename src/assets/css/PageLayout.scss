@@ -31,3 +31,12 @@ footer {
         justify-content: space-between;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+    footer {
+        .links {
+            gap: 2em;
+        }
+    }
+}

@@ -35,7 +35,7 @@
         color: #656565;
         font-size: 26px;
         font-weight: normal;
-        margin-bottom: 0px;
+        padding-bottom: 0;
     }
 
     a.back {
@@ -49,5 +49,37 @@
 
     img {
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .portfolio {
+        header {
+            height: 70px;
+            padding: 1em;
+
+            h1 {
+                font-size: 18px;
+            }
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #656565;
+            font-size: 20px;
+        }
+
+        .container:has(a.back) {
+            padding-bottom: 0;
+        }
+
+        a.back {
+            font-size: 1em;
+            color: var(--color1);
+        }
     }
 }

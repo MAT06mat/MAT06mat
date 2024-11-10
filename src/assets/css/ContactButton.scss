@@ -17,3 +17,11 @@
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+    .contact-button {
+        a {
+            font-size: 10px;
+        }
+    }
+}

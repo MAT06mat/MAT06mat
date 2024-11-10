@@ -53,6 +53,7 @@ header {
       text-align: left;
       color: white;
       font-size: 14px;
+      text-decoration: none;
     }
   }
 }
@@ -68,13 +69,12 @@ h1 {
   text-align: center;
   font-size: 42px;
   margin-top: 10px;
-  margin-bottom: 0px;
 }
 
 h2 {
   text-align: center;
   font-size: 34px;
-  margin-top: 0px;
+  padding-bottom: 1em;
 }
 
 img {
@@ -125,16 +125,8 @@ div.line {
   }
 }
 
-/* RESPONSIVE DESIGN : PARTIE MOBILE */
 
-@media only screen and (max-width: 767px) {
-
-  img.cover-profil {
-    height: 90px;
-    margin-left: -50px;
-    margin-top: 75px;
-  }
-
+@media only screen and (max-width: 768px) {
   .cols {
     flex-direction: column;
 
@@ -148,112 +140,13 @@ div.line {
     margin-top: 6px;
   }
 
-  div.cover p {
-    margin-top: 2px;
-    font-size: 13px;
+  h2 {
+    font-size: 25px;
   }
 
   .section {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  div.section-grise1 {
-    padding-bottom: 40px;
-  }
-
-  div.section-grise2 {
-    padding-top: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  div.frame {
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 20px;
-    box-shadow: none;
-  }
-
-  div.frame img {
-    width: 70px;
-  }
-
-  /* PORTFOLIO MOBILE */
-
-  div.cover-bar h1 {
-    font-size: 20px;
-  }
-
-  div.cover-bar {
-    display: none;
-  }
-
-  div.portfolio-header a.contact-button {
-    font-size: 12px;
-    padding: 7px 15px;
-    margin-top: 28px;
-    margin-right: 16px;
-  }
-
-  h1.portfolio {
-    font-size: 35px;
-  }
-
-  h2.portfolio {
-    font-size: 20px;
-  }
-
-  img.portfolio {
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .display-mobile {
-    display: block;
-  }
-}
-
-
-/* RESPONSIVE DESIGN : PARTIE LARGE */
-
-@media only screen and (min-width: 1200px) {
-
-  div.section-grise1 {
-    background: url(/MAT06mat/images/triangle2white.svg) no-repeat center bottom -1px/100%;
-    background-size: cover;
-    height: 310px;
-    background-color: var(--color2);
-    padding-bottom: 70px;
-
-  }
-
-  div.section-grise2 {
-    background: url(/MAT06mat/images/triangle1white.svg) no-repeat center top -220px/100%;
-    background-color: var(--color2);
-    padding-top: 200px;
-    background-size: cover;
-    height: 770px;
-  }
-
-  div.tableau-portfolio {
-    max-width: 620px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  div.frame {
-    max-width: 1019px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  div.en-savoir-plus {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

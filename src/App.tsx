@@ -3,7 +3,7 @@ import "./App.scss";
 import Home from "./routes/Home";
 import PortfolioCubis from "./routes/PortfolioCubis";
 import PortfolioCriptApp from "./routes/PortfolioCriptApp";
-import PortfolioDjango from "./routes/PortfolioDjango";
+import PortfolioPizzaMama from "./routes/PortfolioPizzaMama";
 import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
@@ -24,7 +24,7 @@ function App() {
                     <Route element={<Home />} index />
                     <Route path="cubis" element={<PortfolioCubis />} />
                     <Route path="cript-app" element={<PortfolioCriptApp />} />
-                    <Route path="pizza-mama" element={<PortfolioDjango />} />
+                    <Route path="pizza-mama" element={<PortfolioPizzaMama />} />
                     <Route
                         path="ultraordinaire"
                         element={<PortfolioUltraordinaire />}

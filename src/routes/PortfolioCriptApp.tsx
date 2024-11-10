@@ -19,9 +19,9 @@ function PortfolioCriptApp() {
                         <p>
                             Voici une application bureau que j'ai créé de zero.
                             <br />
-                            Cette application s'appelle "CriptApp", elle permet
-                            de coder et décoder du texte à partir d'une clé
-                            donné par l'utilisateur.
+                            Cette application s'appelle CriptApp, elle permet de
+                            coder et décoder du texte à partir d'une clé donné
+                            par l'utilisateur.
                             <br />
                             Voici un{" "}
                             <a href="https://github.com/MAT06mat/CriptApp">

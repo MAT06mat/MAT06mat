@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <Helmet>
-                <title>Profile</title>
+                <title>MAT06mat</title>
             </Helmet>
             <header>
                 <div className="bar">

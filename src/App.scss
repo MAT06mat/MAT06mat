@@ -10,7 +10,6 @@
 }
 
 body {
-  margin: 0;
   font-family: Arial;
   line-height: 1.5;
 
@@ -56,6 +55,12 @@ header {
       font-size: 14px;
     }
   }
+}
+
+.container {
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 h1 {

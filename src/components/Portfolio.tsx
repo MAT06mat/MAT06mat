@@ -19,10 +19,7 @@ function Portfolio({ title, children }: Props) {
             </Helmet>
             <div className="portfolio">
                 <header>
-                    <div
-                        className="bar"
-                        style={{ marginTop: "6px", marginLeft: "6px" }}
-                    >
+                    <div className="bar">
                         <h1>MAT06mat</h1>
                     </div>
                     <ContactButton />

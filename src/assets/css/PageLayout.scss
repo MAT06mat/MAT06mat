@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--color2);
+    color: black;
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+
+        a {
+            height: 2em;
+            transition: transform .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            svg {
+                height: 2em;
+            }
+        }
+    }
+
+    .copyright {
+        border-top: solid 1px #c0c0c0;
+        margin-top: 1em;
+        padding-top: 1em;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -8,6 +8,7 @@ import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
 import ScrollToTop from "./components/ScrollToTop";
+import PageLayout from "./components/PageLayout";
 
 function App() {
     return (
@@ -20,7 +21,7 @@ function App() {
         >
             <ScrollToTop />
             <Routes>
-                <Route path="/">
+                <Route path="/" element={<PageLayout />}>
                     <Route element={<Home />} index />
                     <Route path="cubis" element={<PortfolioCubis />} />
                     <Route path="cript-app" element={<PortfolioCriptApp />} />

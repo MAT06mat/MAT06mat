@@ -1,12 +1,53 @@
 .contact {
-    .title {
-        font-size: 30px;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
+    background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
+    color: white;
 
-    img {
-        width: 100px !important;
+    .cols {
+        min-height: 15em;
+        align-items: center;
+
+        .right {
+            width: 70%;
+
+            h2 {
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            p {
+                max-width: 70%;
+            }
+        }
+
+        .left {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            align-items: center;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .contact .cols {
+
+        .right,
+        .left {
+            width: 100%;
+
+            p {
+                max-width: 100%;
+            }
+
+            img {
+                display: none;
+            }
+        }
     }
 }

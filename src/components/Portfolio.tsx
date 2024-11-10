@@ -33,15 +33,15 @@ function Portfolio({ title, children }: Props) {
                         Retour
                     </Link>
                     <div
-                        className="separateur"
+                        className="separator"
                         style={{ marginTop: "-20px" }}
                     ></div>
                     <h1 className="portfolio">Portfolio</h1>
                     <h2 className="portfolio">{title}</h2>
                 </Section>
                 {children}
-                <Contact />
             </div>
+            <Contact />
         </>
     );
 }

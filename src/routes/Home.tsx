@@ -24,7 +24,7 @@ function Home() {
                 </div>
             </header>
             <Section gray end>
-                <div className="separateur margin"></div>
+                <div className="separator margin"></div>
                 <p className="gray">
                     Je développe <b>votre projet WEB</b> ou vos{" "}
                     <b>Applications mobiles</b> iOS/Android de A à Z

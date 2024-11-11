@@ -21,13 +21,14 @@ function PortfolioUltraordinaire() {
                                 Ultraordinaire.fr
                             </a>{" "}
                             est un site vitrine pour présenter Julien Coindet,
-                            un sportif de haut niveau.
+                            un sportif de haut niveau (le site est
+                            temporairement hors ligne).
                             <br />
-                            Ce site a été réalisé avec react.js, une
-                            bibliothèque java-script qui propose du type-script.
+                            Ce site a été réalisé avec React, une bibliothèque
+                            java-script qui propose du type-script.
                             <br />
                             Le site https://mat06mat.github.io/MAT06mat utilise
-                            la même technologie : react.
+                            la même technologie : React.
                             <br />
                             Cela permet d'avoir un affichage plus dynamique sur
                             un site web statique.

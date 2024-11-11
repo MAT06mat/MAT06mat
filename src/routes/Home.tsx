@@ -42,8 +42,8 @@ function Home() {
                             J'ai suivi une formation python qui m'a permis
                             d'obtenir un niveau suffisament solide pour réaliser
                             les projets CripApp, PizzaMama et Cubis un de mes
-                            plus gros projet. De plus j'ai appris react.js ce
-                            qui me permet de créer des applications web comme ce
+                            plus gros projet. De plus j'ai appris React ce qui
+                            me permet de créer des applications web comme ce
                             site ou mon projet Ultraordinaire.
                         </p>
                         <a href="https://github.com/MAT06mat" target="_blank">

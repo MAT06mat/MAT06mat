@@ -30,8 +30,7 @@ header {
   p {
     color: lightgray;
     text-align: center;
-    margin-top: 8px;
-    font-size: 14px;
+    margin-top: .5em;
   }
 
   .contact-button {
@@ -48,18 +47,19 @@ header {
 h1 {
   color: white;
   text-align: center;
-  font-size: 42px;
-  margin-top: 10px;
+  font-size: 2.5em;
+  margin-top: .5em;
 }
 
 h2 {
   text-align: center;
-  font-size: 34px;
+  font-size: 2.2em;
   padding-bottom: 1em;
 }
 
 img {
   object-fit: contain;
+  border-radius: .3em;
 
   &.profil {
     height: 7em;
@@ -68,6 +68,7 @@ img {
 
 .cols {
   display: flex;
+  align-items: center;
   gap: 1em;
 
   &>* {
@@ -82,15 +83,15 @@ img {
 .separator {
   background-color: #979797;
   height: 1px;
-  width: 150px;
+  width: 10em;
   margin: 0.5em auto 1em auto;
 }
 
 p.gray {
-  font-size: 22px;
+  font-size: 1.4em;
   color: #656565;
   text-align: center;
-  max-width: 450px;
+  max-width: 20em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -104,8 +105,8 @@ div.line {
     content: "";
     display: block;
     left: 0;
-    width: 4px;
-    height: 50px;
+    width: .25em;
+    height: 3em;
     background-color: var(--color1);
   }
 
@@ -135,12 +136,12 @@ div.line {
   }
 
   h1 {
-    font-size: 35px;
-    margin-top: 6px;
+    font-size: 2.2em;
+    margin-top: .4em;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 1.6em;
   }
 
   .container {

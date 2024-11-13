@@ -1,6 +1,6 @@
 .portfolio {
     header {
-        height: 90px;
+        height: 5.6em;
         background: url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
         flex-direction: row;
         justify-content: space-between;
@@ -8,10 +8,10 @@
         padding: 1em 2em 1em 1em;
 
         .bar {
-            border-left: 4px solid var(--color1);
-            padding: 8px 16px;
+            border-left: .25em solid var(--color1);
+            padding: .5em 1em;
             color: white;
-            font-size: 24px;
+            font-size: 1.5em;
             font-weight: 600;
         }
 
@@ -21,15 +21,14 @@
     }
 
     h1 {
-        font-size: 46px;
+        font-size: 2.9em;
         color: black;
         line-height: 1;
-        padding-top: 10px;
     }
 
     h2 {
         color: #656565;
-        font-size: 26px;
+        font-size: 1.5em;
         font-weight: normal;
         padding-bottom: 0;
     }
@@ -52,21 +51,21 @@
 @media only screen and (max-width: 767px) {
     .portfolio {
         header {
-            height: 70px;
+            height: 4.4em;
             padding: 1em;
 
             .bar {
-                font-size: 18px;
+                font-size: 1.1em;
             }
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 1.9em;
         }
 
         h2 {
             color: #656565;
-            font-size: 20px;
+            font-size: 1.25em;
         }
 
         .container:has(a.back) {

@@ -2,18 +2,19 @@
     a {
         width: max-content;
         color: var(--color1);
-        border: 3px solid var(--color1);
-        padding: 8px 20px;
+        border: 0.25em solid var(--color1);
+        padding: 0.5em 1.25em;
         text-decoration: none;
         background-color: #00000040;
         display: inline-block;
-        font-size: 14px;
+        font-size: .9em;
         transition: all .2s ease-in-out;
+        font-weight: 600;
 
         &:hover {
             transform: scale(1.1);
             color: white;
-            border: 3px solid white;
+            border: 0.25em solid white;
         }
     }
 }
@@ -21,7 +22,7 @@
 @media only screen and (max-width: 767px) {
     .contact-button {
         a {
-            font-size: 10px;
+            font-size: 0.6em;
         }
     }
 }

@@ -8,8 +8,8 @@ function Contact() {
                 <div className="separator" />
                 <div className="cols">
                     <div className="right">
+                        <h2>Parlons de votre projet</h2>
                         <div className="line">
-                            <h2>Parlons de votre projet</h2>
                             <p>
                                 Vous avez un projet web, ou besoin d'une
                                 application mobile iOS/Android ? Vous êtes au

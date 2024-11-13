@@ -20,19 +20,12 @@ body {
 
 header {
   background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
-  height: 360px;
+  height: 24em;
   padding: 1em;
-
-  .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  img.profil {
-    height: 100px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   p {
     color: lightgray;
@@ -43,18 +36,6 @@ header {
 
   .contact-button {
     margin-top: 1em;
-  }
-
-  .bar {
-    border-left: 4px solid var(--color1);
-    padding: 8px 16px;
-
-    &>* {
-      text-align: left;
-      color: white;
-      font-size: 14px;
-      text-decoration: none;
-    }
   }
 }
 
@@ -79,6 +60,10 @@ h2 {
 
 img {
   object-fit: contain;
+
+  &.profil {
+    height: 7em;
+  }
 }
 
 .cols {

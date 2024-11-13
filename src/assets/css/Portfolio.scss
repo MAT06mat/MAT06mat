@@ -2,26 +2,22 @@
     header {
         height: 90px;
         background: url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1em 2em 1em 1em;
 
-        .bar h1 {
-            padding: 0;
+        .bar {
+            border-left: 4px solid var(--color1);
+            padding: 8px 16px;
             color: white;
+            font-size: 24px;
+            font-weight: 600;
         }
 
         .contact-button {
             margin-top: 0;
         }
-
-        h1 {
-            display: inline-block;
-            font-size: 24px;
-            margin-top: 0px;
-        }
-
     }
 
     h1 {

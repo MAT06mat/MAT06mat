@@ -10,17 +10,10 @@ function Home() {
                 <title>MAT06mat</title>
             </Helmet>
             <header>
-                <div className="bar">
-                    <a href="mailto:mat06mat22@gmail.com">
-                        mat06mat22@gmail.com
-                    </a>
-                </div>
-                <div className="flex">
-                    <img className="profil" src="/MAT06mat/images/profil.png" />
-                    <h1>MAT06mat</h1>
-                    <p>Développeur en apprentissage</p>
-                    <ContactButton />
-                </div>
+                <img className="profil" src="/MAT06mat/images/profil.png" />
+                <h1>MAT06mat</h1>
+                <p>Développeur en apprentissage</p>
+                <ContactButton />
             </header>
             <Section gray end>
                 <div className="separator margin"></div>

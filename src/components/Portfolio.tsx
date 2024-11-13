@@ -18,9 +18,7 @@ function Portfolio({ title, children }: Props) {
             </Helmet>
             <div className="portfolio">
                 <header>
-                    <div className="bar">
-                        <h1>MAT06mat</h1>
-                    </div>
+                    <div className="bar">MAT06mat</div>
                     <ContactButton />
                 </header>
 

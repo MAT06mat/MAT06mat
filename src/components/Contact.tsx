@@ -24,7 +24,10 @@ function Contact() {
                         </div>
                     </div>
                     <div className="left">
-                        <img src="/MAT06mat/images/profil.png" />
+                        <img
+                            className="profil"
+                            src="/MAT06mat/images/profil.png"
+                        />
                         <ContactButton />
                     </div>
                 </div>

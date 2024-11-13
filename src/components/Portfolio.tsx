@@ -23,7 +23,7 @@ function Portfolio({ title, children }: Props) {
                 </header>
 
                 <Section gray end>
-                    <Link to="/" className="back">
+                    <Link to="../" className="back">
                         Retour
                     </Link>
                     <div

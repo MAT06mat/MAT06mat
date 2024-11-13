@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import "../assets/css/PageLayout.scss";
 import Contact from "./Contact";
 
@@ -64,6 +64,7 @@ function PageLayout() {
                     </div>
                 </div>
             </footer>
+            <ScrollRestoration getKey={(location) => location.pathname} />
         </>
     );
 }

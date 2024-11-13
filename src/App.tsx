@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+    Route,
+    createBrowserRouter,
+    createRoutesFromElements,
+    RouterProvider,
+} from "react-router-dom";
 import "./App.scss";
 import Home from "./routes/Home";
 import PortfolioCubis from "./routes/PortfolioCubis";
@@ -7,36 +12,42 @@ import PortfolioPizzaMama from "./routes/PortfolioPizzaMama";
 import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
-import ScrollToTop from "./components/ScrollToTop";
 import PageLayout from "./components/PageLayout";
+
+const router = createBrowserRouter(
+    createRoutesFromElements(
+        <>
+            <Route path="/" element={<PageLayout />}>
+                <Route element={<Home />} index />
+                <Route path="cubis" element={<PortfolioCubis />} />
+                <Route path="cript-app" element={<PortfolioCriptApp />} />
+                <Route path="pizza-mama" element={<PortfolioPizzaMama />} />
+                <Route
+                    path="ultraordinaire"
+                    element={<PortfolioUltraordinaire />}
+                />
+            </Route>
+            <Route path="privacy-policy">
+                <Route path="cubis" element={<PrivacyPolicyCubis />} />
+            </Route>
+            <Route path="*" element={<ErrorPage />} />
+        </>
+    ),
+    {
+        basename: "/MAT06mat",
+        future: {
+            v7_relativeSplatPath: true,
+            v7_normalizeFormMethod: true,
+            v7_fetcherPersist: true,
+            v7_partialHydration: true,
+            v7_skipActionErrorRevalidation: true,
+        },
+    }
+);
 
 function App() {
     return (
-        <Router
-            basename="/MAT06mat"
-            future={{
-                v7_startTransition: true,
-                v7_relativeSplatPath: true,
-            }}
-        >
-            <ScrollToTop />
-            <Routes>
-                <Route path="/" element={<PageLayout />}>
-                    <Route element={<Home />} index />
-                    <Route path="cubis" element={<PortfolioCubis />} />
-                    <Route path="cript-app" element={<PortfolioCriptApp />} />
-                    <Route path="pizza-mama" element={<PortfolioPizzaMama />} />
-                    <Route
-                        path="ultraordinaire"
-                        element={<PortfolioUltraordinaire />}
-                    />
-                </Route>
-                <Route path="privacy-policy">
-                    <Route path="cubis" element={<PrivacyPolicyCubis />} />
-                </Route>
-                <Route path="*" element={<ErrorPage />} />
-            </Routes>
-        </Router>
+        <RouterProvider router={router} future={{ v7_startTransition: true }} />
     );
 }
 

@@ -17,7 +17,7 @@ function PortfolioUltraordinaire() {
                         <p>
                             Voici un site web que j'ai créé pour un client.
                             <br />
-                            <a href="https://ultraordinaire.fr">
+                            <a href="https://ultraordinaire.fr" target="_blank">
                                 Ultraordinaire.fr
                             </a>{" "}
                             est un site vitrine pour présenter Julien Coindet,

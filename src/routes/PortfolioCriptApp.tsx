@@ -11,7 +11,10 @@ function PortfolioCriptApp() {
                             id="img-portfolio"
                             src="/MAT06mat/images/project2.jpg"
                         />
-                        <a href="https://github.com/MAT06mat/CriptApp">
+                        <a
+                            href="https://github.com/MAT06mat/CriptApp"
+                            target="_blank"
+                        >
                             Télécharger pour windows
                         </a>
                     </div>
@@ -24,7 +27,10 @@ function PortfolioCriptApp() {
                             par l'utilisateur.
                             <br />
                             Voici un{" "}
-                            <a href="https://github.com/MAT06mat/CriptApp">
+                            <a
+                                href="https://github.com/MAT06mat/CriptApp"
+                                target="_blank"
+                            >
                                 lien
                             </a>{" "}
                             pour la télécharger.

@@ -11,7 +11,10 @@ function PortfolioPizzaMama() {
                             id="img-portfolio"
                             src="/MAT06mat/images/project1.jpg"
                         />
-                        <a href="https://mat06mat.pythonanywhere.com/">
+                        <a
+                            href="https://mat06mat.pythonanywhere.com/"
+                            target="_blank"
+                        >
                             Consulter le projet
                         </a>
                     </div>

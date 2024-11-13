@@ -11,7 +11,10 @@ function PortfolioCubis() {
                             id="img-portfolio"
                             src="/MAT06mat/images/project3.jpg"
                         />
-                        <a href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1">
+                        <a
+                            href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1"
+                            target="_blank"
+                        >
                             Télécharger pour android
                         </a>
                     </div>
@@ -26,8 +29,11 @@ function PortfolioCubis() {
                             formes variées.
                             <br />
                             Cubis est disponible sur le playstore :{" "}
-                            <a href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1">
-                                Découvrir !
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1"
+                                target="_blank"
+                            >
+                                Découvrir dès maintenant !
                             </a>
                             <br />
                             <u>Technologies utilisées :</u>{" "}

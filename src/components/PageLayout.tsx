@@ -10,7 +10,7 @@ function PageLayout() {
             <footer>
                 <div className="container">
                     <div className="links">
-                        <a href="https://github.com/MAT06mat">
+                        <a href="https://github.com/MAT06mat" target="_blank">
                             <svg
                                 viewBox="0 0 98 96"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,10 @@ function PageLayout() {
                                 />
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/matthieu-felten-39b328325/">
+                        <a
+                            href="https://www.linkedin.com/in/matthieu-felten-39b328325/"
+                            target="_blank"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="2 2 46 46"
@@ -34,7 +37,10 @@ function PageLayout() {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/@mat06mat">
+                        <a
+                            href="https://www.youtube.com/@mat06mat"
+                            target="_blank"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 5 50 40"
@@ -45,7 +51,10 @@ function PageLayout() {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="https://www.twitch.tv/mat06mat4842">
+                        <a
+                            href="https://www.twitch.tv/mat06mat4842"
+                            target="_blank"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 64 64"

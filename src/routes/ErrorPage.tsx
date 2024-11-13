@@ -15,7 +15,7 @@ export default function ErrorPage() {
                     <h1>Oups!</h1>
                     <p>Désolé, une erreur inattendue s'est produite...</p>
                 </div>
-                <Link className="link" to={"/"}>
+                <Link className="link" to="/">
                     Accueil
                 </Link>
             </div>

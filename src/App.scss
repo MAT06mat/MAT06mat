@@ -40,7 +40,7 @@ header {
 }
 
 .container {
-  padding: 1em;
+  padding: 1.5em;
   margin: 0 auto;
   max-width: 80em;
 }
@@ -83,7 +83,7 @@ img {
   background-color: #979797;
   height: 1px;
   width: 150px;
-  margin: 1em auto 1em auto;
+  margin: 0.5em auto 1em auto;
 }
 
 p.gray {
@@ -143,9 +143,7 @@ div.line {
     font-size: 25px;
   }
 
-  .section {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+  .container {
+    padding: 1.5em 1em;
   }
 }

@@ -16,7 +16,7 @@ function Home() {
                 <ContactButton />
             </header>
             <Section gray end>
-                <div className="separator margin"></div>
+                <div className="separator"></div>
                 <p className="gray">
                     Je développe <b>votre projet WEB</b> ou vos{" "}
                     <b>Applications mobiles</b> iOS/Android de A à Z

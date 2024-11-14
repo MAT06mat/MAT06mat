@@ -71,8 +71,12 @@ img {
   align-items: center;
   gap: 1em;
 
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
   &>* {
-    width: 50%;
+    width: calc(50% - 0.5em);
   }
 }
 
@@ -127,7 +131,8 @@ div.line {
     }
   }
 
-  .cols {
+  .cols,
+  .cols.reverse {
     flex-direction: column;
 
     &>* {

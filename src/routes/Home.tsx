@@ -5,6 +5,13 @@ import ContactButton from "../components/ContactButton";
 import SectionImage from "../components/SectionImage";
 
 function Home() {
+    function handleScrollToPortfolio() {
+        const portfolio = document.getElementById("portfolioSection");
+        if (portfolio) {
+            window.scrollTo({ top: portfolio.offsetTop, behavior: "smooth" });
+        }
+    }
+
     return (
         <>
             <Helmet>
@@ -74,7 +81,9 @@ function Home() {
                     <b>l'occasion de repousser mes limites techniques</b> et de
                     répondre aux attentes spécifiques de mes clients.
                     <br />
-                    <a href="#">Voir mes autres projets</a>
+                    <a onClick={handleScrollToPortfolio}>
+                        Voir mes autres projets
+                    </a>
                 </p>
             </SectionImage>
             <SectionImage title="Mes loisirs" src="mc3.png" reverse>
@@ -100,6 +109,7 @@ function Home() {
                     ludique.
                 </p>
             </SectionImage>
+            <div id="portfolioSection" />
             <Section gray start>
                 <h2>Portfolio</h2>
                 <Cards

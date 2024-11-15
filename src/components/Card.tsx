@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import "../assets/css/Cards.scss";
+import { Fragment } from "react/jsx-runtime";
 
-interface Props {
+interface CardProps {
     image: string;
     link: string;
     text: string;
 }
 
-function Card({ image, link, text }: Props) {
+export function Card({ image, link, text }: CardProps) {
     return (
         <div className="card">
             <div className="image">
@@ -16,11 +17,46 @@ function Card({ image, link, text }: Props) {
                     <img src={"/MAT06mat/images/" + image} alt="" />
                 </Link>
             </div>
-            <div className="text">
-                <Link to={link}>{text}</Link>
-            </div>
+            <Link to={link}>{text}</Link>
         </div>
     );
 }
 
-export default Card;
+interface CardsProps {
+    cards: CardProps[];
+}
+
+function Cards({ cards }: CardsProps) {
+    const cols: CardProps[][] = [];
+    cards.forEach((card, index) => {
+        if (index % 2 === 0) {
+            cols.push([card, cards[index + 1]]);
+        }
+    });
+
+    return (
+        <>
+            {cols.map((col, i) => {
+                return (
+                    <Fragment key={i}>
+                        <div className="cols">
+                            {col.map((card, i) => {
+                                return (
+                                    <Card
+                                        image={card.image}
+                                        link={card.link}
+                                        text={card.text}
+                                        key={i}
+                                    />
+                                );
+                            })}
+                        </div>
+                        <div className="gap" />
+                    </Fragment>
+                );
+            })}
+        </>
+    );
+}
+
+export default Cards;

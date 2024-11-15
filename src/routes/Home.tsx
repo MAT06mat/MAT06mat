@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Section from "../components/Section";
-import Card from "../components/Card";
+import Cards from "../components/Card";
 import ContactButton from "../components/ContactButton";
 import SectionImage from "../components/SectionImage";
 
@@ -80,9 +80,8 @@ function Home() {
             <SectionImage title="Mes loisirs" src="mc3.png" reverse>
                 <p>
                     En dehors du développement, je suis passionné par{" "}
-                    <b>Minecraft</b>, un jeu qui me permet de laisser libre
-                    cours à ma <b>créativité</b>
-                    et d'explorer des concepts d'ingénierie.
+                    <b>Minecraft</b>, un jeu qui permet de laisser libre cours à
+                    sa <b>créativité</b>.
                     <br />
                     <br />
                     L'un des aspects du jeu que j'apprécie particulièrement est
@@ -91,7 +90,7 @@ function Home() {
                     laissant cours à une imagination infinie. Grâce à la
                     redstone, j'ai pu concevoir de nombreux systèmes complexes,
                     allant de portes automatiques à des compteurs binaire, et
-                    même un <b>ordinateur fonctionnel</b>.
+                    même à un <b>ordinateur fonctionnel</b>.
                     <br />
                     <br />
                     Ce loisir me permet de mettre en pratique des compétences en
@@ -103,28 +102,30 @@ function Home() {
             </SectionImage>
             <Section gray start>
                 <h2>Portfolio</h2>
-                <div className="cols">
-                    <Card image="project3small.jpg" link="cubis" text="Cubis" />
-                    <Card
-                        image="project4small.jpg"
-                        link="ultraordinaire"
-                        text="Ultraordinaire"
-                    />
-                </div>
-                <div className="gap" />
-                <div className="cols">
-                    <Card
-                        image="project2small.jpg"
-                        link="cript-app"
-                        text="CriptApp"
-                    />
-                    <Card
-                        image="project1small.jpg"
-                        link="pizza-mama"
-                        text="Pizza Mama"
-                    />
-                </div>
-                <div className="padding" />
+                <Cards
+                    cards={[
+                        {
+                            image: "project3small.jpg",
+                            link: "cubis",
+                            text: "Cubis",
+                        },
+                        {
+                            image: "project4small.jpg",
+                            link: "ultraodinaire",
+                            text: "Ultraordinaire",
+                        },
+                        {
+                            image: "project2small.jpg",
+                            link: "cript-app",
+                            text: "CriptApp",
+                        },
+                        {
+                            image: "project1small.jpg",
+                            link: "pizza-mama",
+                            text: "Pizza Mama",
+                        },
+                    ]}
+                />
             </Section>
         </>
     );

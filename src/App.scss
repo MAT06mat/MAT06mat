@@ -125,6 +125,10 @@ div.line {
   padding-bottom: 2em;
 }
 
+.no-select {
+  user-select: none;
+}
+
 
 @media only screen and (max-width: 768px) {
   header {

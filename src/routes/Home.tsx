@@ -81,7 +81,7 @@ function Home() {
                     est <b>l'occasion de repousser mes limites</b> et de
                     répondre aux attentes spécifiques de mes clients.
                     <br />
-                    <a onClick={handleScrollToPortfolio}>
+                    <a className="no-select" onClick={handleScrollToPortfolio}>
                         Voir mes autres projets
                     </a>
                 </p>
@@ -121,7 +121,7 @@ function Home() {
                         },
                         {
                             image: "project4small.jpg",
-                            link: "ultraodinaire",
+                            link: "ultraordinaire",
                             text: "Ultraordinaire",
                         },
                         {

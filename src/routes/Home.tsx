@@ -34,8 +34,8 @@ function Home() {
                 <p>
                     Bonjour👋, je m'appelle Matthieu.
                     <br />
-                    <b>Passionné de programmation</b> depuis mon plus jeune âge,
-                    je suis aujourd'hui un <b>développeur expérimenté</b>.
+                    <b>Passionné par la programmation</b> depuis le plus jeune
+                    âge, je suis aujourd'hui un <b>développeur expérimenté</b>.
                     Depuis que j'ai découvert cet univers, je n'ai cessé
                     d'apprendre pour atteindre mon niveau actuel.
                     <br />
@@ -77,8 +77,8 @@ function Home() {
                     <br />
                     <br />
                     Que ce soit dans la création de sites web, d’applications
-                    mobiles ou d'outils d'automatisation, chaque projet est{" "}
-                    <b>l'occasion de repousser mes limites techniques</b> et de
+                    mobiles ou d'outils d'automatisation, chacun de mes projets
+                    est <b>l'occasion de repousser mes limites</b> et de
                     répondre aux attentes spécifiques de mes clients.
                     <br />
                     <a onClick={handleScrollToPortfolio}>

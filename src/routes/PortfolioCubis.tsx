@@ -13,12 +13,15 @@ function PortfolioCubis() {
                     réfléchissant à la meilleure façon de les agencer.
                     <br />
                     <br />
-                    Développé en <b>Python</b> avec <b>le framework Kivy</b>, et
-                    déployé sur Android grâce à l'outil <b>Buildozer</b>, Cubis
-                    illustre mon savoir-faire dans la création d'applications
-                    mobiles performantes et intuitives. Le jeu est{" "}
-                    <b>disponible</b> sur le <b>Play Store</b>, prêt à défier
-                    votre logique et vos compétences stratégiques.
+                    Développé en <b>Python</b>, Cubis illustre mon savoir-faire
+                    dans la création d'applications mobiles performantes et
+                    intuitives. Le jeu est <b>disponible</b> sur le{" "}
+                    <b>Play Store</b>, prêt à défier votre logique et vos
+                    compétences stratégiques.
+                    <br />
+                    <br />
+                    <u>Technologies utilisées :</u>{" "}
+                    <b>Python, Kivy, Buildozer et PHP</b>
                     <br />
                     <br />
                     <a

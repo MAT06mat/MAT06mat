@@ -6,26 +6,29 @@ function PortfolioUltraordinaire() {
         <Portfolio title="Ultraordinaire">
             <SectionImage src="project4.jpg" gap>
                 <p>
-                    Voici un site web que j'ai créé pour un client.
-                    <br />
+                    J'ai conçu le site{" "}
                     <a href="https://ultraordinaire.fr" target="_blank">
-                        Ultraordinaire.fr
+                        ultraordinaire.fr
                     </a>{" "}
-                    est un site vitrine pour présenter Julien Coindet, un
-                    sportif de haut niveau (le site est temporairement hors
-                    ligne).
+                    pour présenter Julien Coindet, un sportif de haut niveau (le
+                    site est temporairement hors ligne). Ce site vitrine a été
+                    développé avec <b>React</b>, une{" "}
+                    <b>bibliothèque JavaScript moderne</b>, complétée par{" "}
+                    <b>TypeScript</b> pour garantir un code plus robuste et
+                    maintenable.
                     <br />
-                    Ce site a été réalisé avec React, une bibliothèque
-                    java-script qui propose du type-script.
                     <br />
-                    Le site https://mat06mat.github.io/MAT06mat utilise la même
-                    technologie : React.
+                    Ce projet avait pour objectif de fournir{" "}
+                    <b>une interface dynamique et réactive</b> tout en
+                    conservant les avantages d’un site statique, comme une
+                    performance accrue et une meilleure accessibilité. Un
+                    exemple similaire de site utilisant cette technologie est
+                    mon site <b>https://mat06mat.github.io/MAT06mat</b>, qui
+                    repose également sur React.
                     <br />
-                    Cela permet d'avoir un affichage plus dynamique sur un site
-                    web statique.
                     <br />
                     <u>Technologies utilisées :</u>{" "}
-                    <b>HTML, SCSS, JS, REACT, Type-Script</b>
+                    <b>HTML, SCSS, JS, REACT et TypeScript</b>
                 </p>
             </SectionImage>
         </Portfolio>

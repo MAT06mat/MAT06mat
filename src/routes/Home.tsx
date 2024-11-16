@@ -20,7 +20,7 @@ function Home() {
             <header>
                 <img className="profil" src="/MAT06mat/images/profil.png" />
                 <h1>MAT06mat</h1>
-                <p>Développeur en expérimenté</p>
+                <p>Développeur expérimenté</p>
                 <ContactButton />
             </header>
             <Section gray end>

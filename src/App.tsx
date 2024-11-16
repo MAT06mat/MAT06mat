@@ -13,6 +13,8 @@ import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
 import PageLayout from "./components/PageLayout";
+import PortfolioMatBot from "./routes/PortfolioMatBot";
+import PortfolioGlups from "./routes/PortfolioGlups";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -20,12 +22,14 @@ const router = createBrowserRouter(
             <Route path="/" element={<PageLayout />}>
                 <Route element={<Home />} index />
                 <Route path="cubis" element={<PortfolioCubis />} />
-                <Route path="cript-app" element={<PortfolioCriptApp />} />
-                <Route path="pizza-mama" element={<PortfolioPizzaMama />} />
                 <Route
                     path="ultraordinaire"
                     element={<PortfolioUltraordinaire />}
                 />
+                <Route path="cript-app" element={<PortfolioCriptApp />} />
+                <Route path="pizza-mama" element={<PortfolioPizzaMama />} />
+                <Route path="mat-bot" element={<PortfolioMatBot />} />
+                <Route path="glups" element={<PortfolioGlups />} />
             </Route>
             <Route path="privacy-policy">
                 <Route path="cubis" element={<PrivacyPolicyCubis />} />

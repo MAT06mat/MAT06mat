@@ -14,7 +14,11 @@ export function Card({ image, link, text }: CardProps) {
             <div className="image">
                 <div className="vertical-separator"></div>
                 <Link to={link}>
-                    <img src={"/MAT06mat/images/" + image} alt="" />
+                    <img
+                        src={"/MAT06mat/images/" + image}
+                        alt=""
+                        className="shadow"
+                    />
                 </Link>
             </div>
             <div className="text">

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Section from "../components/Section";
-import Cards from "../components/Card";
+import Cards from "../components/Cards";
 import ContactButton from "../components/ContactButton";
 import SectionImage from "../components/SectionImage";
 
@@ -136,7 +136,7 @@ function Home() {
                         },
                         {
                             image: "project6small.jpg",
-                            link: "matbot",
+                            link: "mat-bot",
                             text: "MatBot",
                         },
                         {

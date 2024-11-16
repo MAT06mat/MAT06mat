@@ -15,7 +15,11 @@ function SectionImage({ title, src, gray, reverse, children, gap }: Props) {
         <Section gray={gray} end={gray} start={gray}>
             {title ? <h2>{title}</h2> : null}
             <div className={reverse ? "cols reverse" : "cols"}>
-                <img src={"/MAT06mat/images/" + src} alt="" />
+                <img
+                    src={"/MAT06mat/images/" + src}
+                    alt=""
+                    className="shadow"
+                />
                 <div className="line">{children}</div>
             </div>
             {gap ? <div className="gap" /> : null}

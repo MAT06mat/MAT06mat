@@ -6,24 +6,27 @@ function PortfolioCubis() {
         <Portfolio title="Cubis">
             <SectionImage src="project3.jpg">
                 <p>
-                    Voici une application mobile que j'ai créé de zero.
+                    <b>Cubis</b> est une <b>application mobile</b> que j'ai
+                    développée de A à Z, spécialement conçue pour les amateurs
+                    de jeux de réflexion. Le principe est simple : remplir une
+                    grille à l'aide de pièces aux formes variées, en
+                    réfléchissant à la meilleure façon de les agencer.
                     <br />
-                    Cubis est une application mobile qui entre dans la catégorie
-                    des jeux de réflexion.
                     <br />
-                    Le but est de remplir une grille avec des pièces de formes
-                    variées.
+                    Développé en <b>Python</b> avec <b>le framework Kivy</b>, et
+                    déployé sur Android grâce à l'outil <b>Buildozer</b>, Cubis
+                    illustre mon savoir-faire dans la création d'applications
+                    mobiles performantes et intuitives. Le jeu est{" "}
+                    <b>disponible</b> sur le <b>Play Store</b>, prêt à défier
+                    votre logique et vos compétences stratégiques.
                     <br />
-                    Cubis est disponible sur le playstore :{" "}
+                    <br />
                     <a
                         href="https://play.google.com/store/apps/details?id=com.matthieufelten.cubis&pli=1"
                         target="_blank"
                     >
                         Télécharger pour android
                     </a>
-                    <br />
-                    <u>Technologies utilisées :</u>{" "}
-                    <b>Python, Kivy et Buildozer</b>
                 </p>
             </SectionImage>
             <div className="gap" />

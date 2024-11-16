@@ -17,7 +17,9 @@ export function Card({ image, link, text }: CardProps) {
                     <img src={"/MAT06mat/images/" + image} alt="" />
                 </Link>
             </div>
-            <Link to={link}>{text}</Link>
+            <div className="text">
+                <Link to={link}>{text}</Link>
+            </div>
         </div>
     );
 }

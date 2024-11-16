@@ -134,6 +134,16 @@ function Home() {
                             link: "pizza-mama",
                             text: "Pizza Mama",
                         },
+                        {
+                            image: "project6small.jpg",
+                            link: "matbot",
+                            text: "MatBot",
+                        },
+                        {
+                            image: "project5small.jpg",
+                            link: "glups",
+                            text: "Glups",
+                        },
                     ]}
                 />
             </Section>

@@ -24,11 +24,15 @@
         }
     }
 
-    a {
-        text-decoration: none;
-        color: #656565;
-        display: block;
-        text-align: center;
+    .text {
+        padding: 0 1em 0 3em;
+
+        a {
+            text-decoration: none;
+            color: #656565;
+            display: block;
+            text-align: center;
+        }
     }
 }
 

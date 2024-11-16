@@ -1,11 +1,10 @@
-import "../assets/css/Portfolio.scss";
 import Portfolio from "../components/Portfolio";
 import SectionImage from "../components/SectionImage";
 
 function PortfolioUltraordinaire() {
     return (
         <Portfolio title="Ultraordinaire">
-            <SectionImage src="project4.jpg">
+            <SectionImage src="project4.jpg" gap>
                 <p>
                     Voici un site web que j'ai créé pour un client.
                     <br />
@@ -29,7 +28,6 @@ function PortfolioUltraordinaire() {
                     <b>HTML, SCSS, JS, REACT, Type-Script</b>
                 </p>
             </SectionImage>
-            <div className="gap" />
         </Portfolio>
     );
 }

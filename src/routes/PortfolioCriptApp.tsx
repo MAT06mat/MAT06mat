@@ -4,7 +4,7 @@ import SectionImage from "../components/SectionImage";
 function PortfolioCriptApp() {
     return (
         <Portfolio title="CriptApp">
-            <SectionImage src="project2.jpg">
+            <SectionImage src="project2.jpg" gap>
                 <p>
                     Voici une application bureau que j'ai créé de zero.
                     <br />
@@ -24,7 +24,6 @@ function PortfolioCriptApp() {
                     <u>Technologies utilisées :</u> <b>Python et Tkinter</b>
                 </p>
             </SectionImage>
-            <div className="gap" />
         </Portfolio>
     );
 }

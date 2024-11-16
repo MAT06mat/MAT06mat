@@ -6,10 +6,11 @@ interface Props {
     src: string;
     gray?: boolean;
     reverse?: boolean;
+    gap?: boolean;
     children: ReactNode;
 }
 
-function SectionImage({ title, src, gray, reverse, children }: Props) {
+function SectionImage({ title, src, gray, reverse, children, gap }: Props) {
     return (
         <Section gray={gray} end={gray} start={gray}>
             {title ? <h2>{title}</h2> : null}
@@ -17,6 +18,7 @@ function SectionImage({ title, src, gray, reverse, children }: Props) {
                 <img src={"/MAT06mat/images/" + src} alt="" />
                 <div className="line">{children}</div>
             </div>
+            {gap ? <div className="gap" /> : null}
         </Section>
     );
 }

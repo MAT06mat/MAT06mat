@@ -4,7 +4,7 @@ import SectionImage from "../components/SectionImage";
 function PortfolioCubis() {
     return (
         <Portfolio title="Cubis">
-            <SectionImage src="project3.jpg">
+            <SectionImage src="project3.jpg" gap>
                 <p>
                     <b>Cubis</b> est une <b>application mobile</b> que j'ai
                     développée de A à Z, spécialement conçue pour les amateurs
@@ -29,7 +29,6 @@ function PortfolioCubis() {
                     </a>
                 </p>
             </SectionImage>
-            <div className="gap" />
         </Portfolio>
     );
 }

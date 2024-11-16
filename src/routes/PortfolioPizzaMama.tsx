@@ -4,7 +4,7 @@ import SectionImage from "../components/SectionImage";
 function PortfolioPizzaMama() {
     return (
         <Portfolio title="Pizza Mama">
-            <SectionImage src="project1.jpg">
+            <SectionImage src="project1.jpg" gap>
                 <p>
                     J'ai réaliser ce projet web pour un client travaillant dans
                     le domaine de la restauration.
@@ -32,7 +32,6 @@ function PortfolioPizzaMama() {
                     <b>HTML, CSS, DJANGO, PYTHON, HEROKU</b>
                 </p>
             </SectionImage>
-            <div className="gap" />
         </Portfolio>
     );
 }

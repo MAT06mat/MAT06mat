@@ -6,20 +6,21 @@ function PortfolioPizzaMama() {
         <Portfolio title="Pizza Mama">
             <SectionImage src="project1.jpg" gap>
                 <p>
-                    J'ai réaliser ce projet web pour un client travaillant dans
-                    le domaine de la restauration.
+                    J'ai réaliser <b>ce projet web</b> pour un client
+                    travaillant dans le domaine de la restauration. L'objectif
+                    est de permettre à ce restaurant de gagner en visibilié et
+                    de <b>proposer son menu de pizzas aux utilisateurs</b>.
                     <br />
-                    L'objectif ? Permettre à ce restaurant de gagner en
-                    visibilié et de proposer son menu de pizzas aux
-                    utilisateurs.
                     <br />
                     Mon client, étant novice dans les nouvelles technologies, à
-                    la possibilité de modifier son menu facilement en ligne
+                    la{" "}
+                    <b>
+                        possibilité de modifier son menu facilement en ligne
+                    </b>{" "}
                     grâce à une interface d'administration sur mesure que j'ai
-                    réalisé.
-                    <br />
-                    Ce projet simple mais fonctionnel a donné entière
+                    réalisé. Ce projet simple mais fonctionnel a donné entière
                     satisfaction à mon client.
+                    <br />
                     <br />
                     <a
                         href="https://mat06mat.pythonanywhere.com/"
@@ -27,6 +28,7 @@ function PortfolioPizzaMama() {
                     >
                         Consulter le projet
                     </a>
+                    <br />
                     <br />
                     <u>Technologies utilisées :</u>{" "}
                     <b>HTML, CSS, DJANGO, PYTHON, HEROKU</b>

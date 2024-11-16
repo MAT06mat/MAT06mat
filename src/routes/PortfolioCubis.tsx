@@ -21,7 +21,7 @@ function PortfolioCubis() {
                     <br />
                     <br />
                     <u>Technologies utilisées :</u>{" "}
-                    <b>Python, Kivy, Buildozer et PHP</b>
+                    <b>PYTHON, KIVY, BUILDOZER, PHP</b>
                     <br />
                     <br />
                     <a

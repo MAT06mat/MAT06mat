@@ -28,7 +28,7 @@ function PortfolioUltraordinaire() {
                     <br />
                     <br />
                     <u>Technologies utilisées :</u>{" "}
-                    <b>HTML, SCSS, JS, REACT et TypeScript</b>
+                    <b>HTML, SCSS, JS, REACT, TypeScript</b>
                 </p>
             </SectionImage>
         </Portfolio>

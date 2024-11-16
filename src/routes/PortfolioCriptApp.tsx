@@ -6,22 +6,30 @@ function PortfolioCriptApp() {
         <Portfolio title="CriptApp">
             <SectionImage src="project2.jpg" gap>
                 <p>
-                    Voici une application bureau que j'ai créé de zero.
-                    <br />
-                    Cette application s'appelle CriptApp, elle permet de coder
-                    et décoder du texte à partir d'une clé donné par
+                    <b>CriptApp</b> est une application de bureau que j'ai
+                    développée à partir de zéro. Cette application offre une
+                    solution simple et efficace pour <b>encoder et décoder</b>{" "}
+                    des textes en utilisant <b>une clé</b> fournie par
                     l'utilisateur.
                     <br />
-                    Voici un{" "}
+                    <br />
+                    L'objectif principal de CriptApp est de permettre à chacun
+                    de <b>sécuriser ses messages</b> de manière accessible.
+                    L'utilisateur peut saisir un texte, définir une clé de son
+                    choix, et obtenir un résultat codé unique. De même, en
+                    fournissant la même clé, il peut décoder le message avec
+                    précision.
+                    <br />
+                    <br />
+                    <u>Technologies utilisées :</u> <b>PYTHON, TKINTER</b>
+                    <br />
+                    <br />
                     <a
                         href="https://github.com/MAT06mat/CriptApp"
                         target="_blank"
                     >
-                        lien
-                    </a>{" "}
-                    pour la télécharger.
-                    <br />
-                    <u>Technologies utilisées :</u> <b>Python et Tkinter</b>
+                        Consulter le projet
+                    </a>
                 </p>
             </SectionImage>
         </Portfolio>

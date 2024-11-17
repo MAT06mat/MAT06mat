@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../assets/css/ZoomImage.scss";
-import { isMobile } from "react-device-detect";
 
 interface Props {
     src?: string;
@@ -11,7 +10,7 @@ interface Props {
 function ZoomImage({ src = "", alt = "", className = "" }: Props) {
     const [active, setActive] = useState(Boolean);
     function handleClick() {
-        if (!isMobile) {
+        if (window.innerWidth > 768) {
             setActive(!active);
         }
     }

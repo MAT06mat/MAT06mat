@@ -1,0 +1,31 @@
+.can-zoom {
+    cursor: zoom-in;
+}
+
+.zoom-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    height: 100svh;
+    z-index: 999;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07070770;
+    cursor: zoom-out;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        box-shadow: 0 0 10px 10px #65656540;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .can-zoom {
+        cursor: default;
+    }
+}

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Section from "./Section";
+import ZoomImage from "./ZoomImage";
 
 interface Props {
     title?: string;
@@ -15,7 +16,7 @@ function SectionImage({ title, src, gray, reverse, children, gap }: Props) {
         <Section gray={gray} end={gray} start={gray}>
             {title ? <h2>{title}</h2> : null}
             <div className={reverse ? "cols reverse" : "cols"}>
-                <img
+                <ZoomImage
                     src={"/MAT06mat/images/" + src}
                     alt=""
                     className="shadow"

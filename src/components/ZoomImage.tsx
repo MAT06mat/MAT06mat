@@ -9,6 +9,7 @@ interface Props {
 
 function ZoomImage({ src = "", alt = "", className = "" }: Props) {
     const [active, setActive] = useState(Boolean);
+
     function handleClick() {
         if (window.innerWidth > 768) {
             setActive(!active);

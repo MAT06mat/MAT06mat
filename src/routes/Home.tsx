@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import Section from "../components/Section";
+import Section from "../layouts/Section";
 import Cards from "../components/Cards";
 import ContactButton from "../components/ContactButton";
-import SectionImage from "../components/SectionImage";
+import SectionImage from "../layouts/SectionImage";
 
 function Home() {
     function handleScrollToPortfolio() {

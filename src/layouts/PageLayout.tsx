@@ -1,6 +1,6 @@
 import { Outlet, ScrollRestoration } from "react-router-dom";
 import "../assets/css/PageLayout.scss";
-import Contact from "./Contact";
+import Contact from "../components/Contact";
 
 function PageLayout() {
     return (

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../assets/css/Cards.scss";
 import { Fragment } from "react/jsx-runtime";
+import { motion } from "framer-motion";
 
 interface CardProps {
     image: string;
@@ -14,10 +15,15 @@ export function Card({ image, link, text }: CardProps) {
             <div className="image">
                 <div className="vertical-separator"></div>
                 <Link to={link}>
-                    <img
+                    <motion.img
                         src={"/MAT06mat/images/" + image}
                         alt=""
                         className="shadow"
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        whileHover={{
+                            scale: 1.05,
+                            boxShadow: "0 0 15px 2px #65656540",
+                        }}
                     />
                 </Link>
             </div>

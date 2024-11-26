@@ -12,7 +12,7 @@ import PortfolioPizzaMama from "./routes/PortfolioPizzaMama";
 import PortfolioUltraordinaire from "./routes/PortfolioUltraordinaire";
 import PrivacyPolicyCubis from "./routes/PrivacyPolicyCubis";
 import ErrorPage from "./routes/ErrorPage";
-import PageLayout from "./components/PageLayout";
+import PageLayout from "./layouts/PageLayout";
 import PortfolioMatBot from "./routes/PortfolioMatBot";
 import PortfolioGlups from "./routes/PortfolioGlups";
 

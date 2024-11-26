@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Portfolio from "../components/Portfolio";
-import SectionImage from "../components/SectionImage";
+import Portfolio from "../layouts/Portfolio";
+import SectionImage from "../layouts/SectionImage";
 
 function PortfolioMatBot() {
     return (

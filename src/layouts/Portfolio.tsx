@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Helmet } from "react-helmet-async";
-import ContactButton from "./ContactButton";
+import ContactButton from "../components/ContactButton";
 import "../assets/css/Portfolio.scss";
 import Section from "./Section";
 import { Link } from "react-router-dom";

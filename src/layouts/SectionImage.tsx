@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Section from "./Section";
-import ZoomImage from "./ZoomImage";
+import ZoomImage from "../components/ZoomImage";
 
 interface Props {
     title?: string;

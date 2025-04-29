@@ -10,9 +10,8 @@ function PortfolioUltraordinaire() {
                     <a href="https://ultraordinaire.fr" target="_blank">
                         ultraordinaire.fr
                     </a>{" "}
-                    pour présenter Julien Coindet, un sportif de haut niveau (le
-                    site est temporairement hors ligne). Ce site vitrine a été
-                    développé avec <b>React</b>, une{" "}
+                    pour présenter Julien Coindet, un sportif de haut niveau. Ce
+                    site vitrine a été développé avec <b>React</b>, une{" "}
                     <b>bibliothèque JavaScript moderne</b>, complétée par{" "}
                     <b>TypeScript</b> pour garantir un code plus robuste et
                     maintenable.

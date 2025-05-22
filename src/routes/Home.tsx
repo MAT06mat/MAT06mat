@@ -50,7 +50,7 @@ function Home() {
                     et bien d'autres.
                     <br />
                     <br />
-                    Ces connaissance ont étés aquises grâce à des formations
+                    Ces connaissances ont étés aquises grâce à des formations
                     comme celle de{" "}
                     <a
                         href="https://codeavecjonathan.com/formations.html"
@@ -98,7 +98,7 @@ function Home() {
                     <b>de créer des circuits et des mécanismes variés</b>,
                     laissant cours à une imagination infinie. Grâce à la
                     redstone, j'ai pu concevoir de nombreux systèmes complexes,
-                    allant de portes automatiques à des compteurs binaire, et
+                    allant de portes automatiques à des compteurs binaires, et
                     même à un <b>ordinateur fonctionnel</b>.
                     <br />
                     <br />

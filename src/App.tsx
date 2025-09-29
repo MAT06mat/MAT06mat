@@ -32,7 +32,7 @@ const router = createBrowserRouter(
                 <Route path="mat-bot" element={<PortfolioMatBot />} />
                 <Route path="glups" element={<PortfolioGlups />} />
             </Route>
-            <Route path="color-time" element={<ColorTime />} />
+            <Route path="/color-time" element={<ColorTime />} />
             <Route path="privacy-policy">
                 <Route path="cubis" element={<PrivacyPolicyCubis />} />
             </Route>

@@ -15,6 +15,7 @@ import ErrorPage from "./routes/ErrorPage";
 import PageLayout from "./layouts/PageLayout";
 import PortfolioMatBot from "./routes/PortfolioMatBot";
 import PortfolioGlups from "./routes/PortfolioGlups";
+import ColorTime from "./routes/others/ColorTime";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
                 <Route path="mat-bot" element={<PortfolioMatBot />} />
                 <Route path="glups" element={<PortfolioGlups />} />
             </Route>
+            <Route path="color-time" element={<ColorTime />} />
             <Route path="privacy-policy">
                 <Route path="cubis" element={<PrivacyPolicyCubis />} />
             </Route>

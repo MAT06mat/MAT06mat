@@ -1,165 +1,166 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-  --color1: #D89584;
-  --color2: #F4F4F4;
+    --color1: #d89584;
+    --color2: #f4f4f4;
 }
 
 body {
-  font-family: Arial;
-  line-height: 1.5;
+    font-family: Arial;
+    line-height: 1.5;
 
-  a {
-    cursor: pointer;
-    text-decoration: underline;
-    color: var(--color1)
-  }
+    a {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--color1);
+    }
 }
 
 header {
-  background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100% 100%, url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
-  height: 24em;
-  padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background: url(/MAT06mat/images/cover_overlay.png) no-repeat center/100%
+            100%,
+        url(/MAT06mat/images/cover.jpg) no-repeat center/cover;
+    height: 24em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  p {
-    color: lightgray;
-    text-align: center;
-    margin-top: .5em;
-  }
+    p {
+        color: lightgray;
+        text-align: center;
+        margin-top: 0.5em;
+    }
 
-  .contact-button {
-    margin-top: 1em;
-  }
+    .contact-button {
+        margin-top: 1em;
+    }
 }
 
 .container {
-  padding: 1.5em;
-  margin: 0 auto;
-  max-width: 80em;
+    padding: 1.5em;
+    margin: 0 auto;
+    max-width: 80em;
 }
 
 h1 {
-  color: white;
-  text-align: center;
-  font-size: 2.5em;
-  margin-top: .5em;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0.5em;
 }
 
 h2 {
-  text-align: center;
-  font-size: 2.2em;
-  padding-bottom: 1em;
+    text-align: center;
+    font-size: 2.2em;
+    padding-bottom: 1em;
 }
 
 img {
-  object-fit: contain;
-  border-radius: .3em;
+    object-fit: contain;
+    border-radius: 0.3em;
 
-  &.profil {
-    height: 7em;
-  }
+    &.profil {
+        height: 7em;
+    }
 
-  &.shadow {
-    box-shadow: 0 0 10px 1px #65656520;
-  }
+    &.shadow {
+        box-shadow: 0 0 10px 1px #65656520;
+    }
 }
 
 .cols {
-  display: flex;
-  align-items: center;
-  gap: 2em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
 
-  &.reverse {
-    flex-direction: row-reverse;
-  }
+    &.reverse {
+        flex-direction: row-reverse;
+    }
 
-  &>* {
-    width: calc(50% - 1em);
-  }
+    & > * {
+        width: calc(50% - 1em);
+    }
 }
 
 .gap {
-  height: 2em;
+    height: 2em;
 }
 
 .separator {
-  background-color: #979797;
-  height: 1px;
-  width: 10em;
-  margin: 0.5em auto 1em auto;
+    background-color: #979797;
+    height: 1px;
+    width: 10em;
+    margin: 0.5em auto 1em auto;
 }
 
 p.gray {
-  font-size: 1.4em;
-  color: #656565;
-  text-align: center;
-  max-width: 20em;
-  margin-left: auto;
-  margin-right: auto;
+    font-size: 1.4em;
+    color: #656565;
+    text-align: center;
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.line {
-  padding-left: 1em;
-  position: relative;
+    padding-left: 1em;
+    position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    display: block;
-    left: 0;
-    width: .25em;
-    height: 3em;
-    background-color: var(--color1);
-  }
+    &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        left: 0;
+        width: 0.25em;
+        height: 3em;
+        background-color: var(--color1);
+    }
 
-  p {
-    margin-top: 0;
-  }
+    p {
+        margin-top: 0;
+    }
 }
 
 .padding {
-  padding-bottom: 2em;
+    padding-bottom: 2em;
 }
 
 .no-select {
-  user-select: none;
+    user-select: none;
 }
 
-
 @media only screen and (max-width: 768px) {
-  header {
-    img.profil {
-      margin-top: 2em;
+    header {
+        img.profil {
+            margin-top: 2em;
+        }
     }
-  }
 
-  .cols,
-  .cols.reverse {
-    flex-direction: column;
+    .cols,
+    .cols.reverse {
+        flex-direction: column;
 
-    &>* {
-      width: 100%;
+        & > * {
+            width: 100%;
+        }
     }
-  }
 
-  h1 {
-    font-size: 2.2em;
-    margin-top: .4em;
-  }
+    h1 {
+        font-size: 2.2em;
+        margin-top: 0.4em;
+    }
 
-  h2 {
-    font-size: 1.6em;
-  }
+    h2 {
+        font-size: 1.6em;
+    }
 
-  .container {
-    padding: 1.5em 1em;
-  }
+    .container {
+        padding: 1.5em 1em;
+    }
 }

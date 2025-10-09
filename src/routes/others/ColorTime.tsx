@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import namer from "color-namer";
+import "./ColorTime.scss";
 
 function timeToColor() {
     const date = new Date();
@@ -37,7 +39,7 @@ function colorToTime({ r, g, b }: { r: number; g: number; b: number }) {
 }
 
 function ColorTime() {
-    const [color, setColor] = useState("rbg(255, 255, 255)");
+    const [color, setColor] = useState("rgb(255, 255, 255)");
     const [darkMode, setDarkMode] = useState(true);
 
     useEffect(() => {
@@ -50,20 +52,11 @@ function ColorTime() {
         return () => clearInterval(i);
     });
 
-    const divStyle: React.CSSProperties = {
-        width: "max-content",
-        padding: "0.5rem 1rem",
-        marginBottom: "1rem",
-        borderRadius: "0.4rem",
-        border: `#${darkMode ? "000000" : "ffffff"} 2px solid`,
-        color: darkMode ? "#000000" : "#ffffff",
-        backgroundColor: color,
-    };
-
     const [averageColor, setAverageColor] = useState<null | {
         r: number;
         g: number;
         b: number;
+        dark: boolean;
     }>(null);
 
     const handleFileChange: React.ChangeEventHandler<HTMLInputElement> = (
@@ -115,46 +108,66 @@ function ColorTime() {
                 g = Math.round(g / totalPixels);
                 b = Math.round(b / totalPixels);
 
-                setAverageColor({ r, g, b });
+                const luma = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+
+                setAverageColor({ r, g, b, dark: luma >= 40 });
             };
         };
         reader.readAsDataURL(file);
     };
 
+    const fileColor = `rgb(${averageColor?.r}, ${averageColor?.g}, ${averageColor?.b})`;
+
     return (
-        <div className="container">
-            <p style={{ paddingBottom: "0.5rem" }}>
-                <b>Current time :</b>
-            </p>
-            <div style={divStyle}>{color} MT</div>
-            <input
-                type="file"
-                accept="image/jpeg, image/png"
-                name="img"
-                onChange={handleFileChange}
-            />
-            {averageColor ? (
-                <>
-                    <div
-                        style={{
-                            width: 100,
-                            height: 100,
-                            backgroundColor: `rgb(${averageColor.r}, ${averageColor.g}, ${averageColor.b})`,
-                            border: "1px solid #000",
-                        }}
-                    ></div>{" "}
-                    <p>
-                        {" "}
-                        RGB: ({averageColor.r}, {averageColor.g},{" "}
-                        {averageColor.b}){" "}
-                    </p>
-                    <p>{`Il est actuelement ${
-                        colorToTime(averageColor).hours
-                    }h ${colorToTime(averageColor).minutes}min ${
-                        colorToTime(averageColor).seconds
-                    }sec sur cette image !`}</p>
-                </>
-            ) : null}
+        <div className="container" id="color-time">
+            <div className="section">
+                <p>
+                    <b>Current time :</b>
+                </p>
+                <div
+                    className={"colored-div" + (darkMode ? " dark-mode" : "")}
+                    style={{ backgroundColor: color }}
+                    onClick={() => navigator.clipboard.writeText(color)}
+                >
+                    {color} MT
+                </div>
+                <p>
+                    <b>Name:</b> {namer(color).pantone[0].name}
+                </p>
+            </div>
+            <div className="section">
+                <p>
+                    <b>Choose file :</b>
+                </p>
+                <input
+                    type="file"
+                    accept="image/jpeg, image/png"
+                    name="img"
+                    onChange={handleFileChange}
+                />
+                {averageColor ? (
+                    <>
+                        <div
+                            className={
+                                "colored-div" +
+                                (averageColor.dark ? " dark-mode" : "")
+                            }
+                            style={{ backgroundColor: fileColor }}
+                            onClick={() =>
+                                navigator.clipboard.writeText(fileColor)
+                            }
+                        >
+                            {fileColor + " MT"}
+                        </div>
+                        <p>{`Il est actuelement ${
+                            colorToTime(averageColor).hours
+                        }h ${colorToTime(averageColor).minutes}min ${
+                            colorToTime(averageColor).seconds
+                        }sec sur cette image !`}</p>
+                        <b>Name:</b> {namer(fileColor).pantone[0].name}
+                    </>
+                ) : null}
+            </div>
         </div>
     );
 }

@@ -1,0 +1,28 @@
+#color-time {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .colored-div {
+        width: max-content;
+        padding: 0.8rem 1.6rem;
+        margin-bottom: 1rem;
+        border-radius: 0.4rem;
+        border: #ffffff 1px solid;
+        color: #ffffff;
+        cursor: pointer;
+
+        &.dark-mode {
+            border: #000000 1px solid;
+            color: #000000;
+        }
+    }
+
+    input {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
